@@ -2,26 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-
-html {
-  /* a cada 1rem será considera 10px */
-  font-size: 62.5%;
-}
-
-html,
-body {
-  height: 100vh;
-  font-family: "Source Sans Pro";
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
 header {
-  background:  linear-gradient(60deg, #55DBCB, #39A2AE);;
+  background:  linear-gradient(60deg, #236BAB, #359ECB);;
   height: 55px;
   display: flex;  
   width: 100%;
@@ -31,7 +13,7 @@ header {
   padding-right: 32px;
 
   p {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 
@@ -75,7 +57,7 @@ header nav ul li a:hover {
 
 h2 {
   color: rgb(75, 75, 75);
-  font-size: 3.6rem;
+  font-size: 3.0rem;
   line-height: 4.6rem;
 }
 
@@ -157,7 +139,7 @@ CARDS
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #39A2AE;
+  background-color: #236BAB;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 
@@ -201,7 +183,7 @@ CARDS
   margin-left: auto;
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: #56A3A6;
+  background-color: #236BAB;
   filter: brightness(90%);
 }
 

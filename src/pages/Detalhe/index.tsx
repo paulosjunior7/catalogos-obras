@@ -1,24 +1,25 @@
 
 import React, { useEffect, useState } from 'react'
-import { Link, useHistory , useLocation } from 'react-router-dom'
-import { FiArrowLeft, FiArrowRight } from 'react-icons/fi'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
+import { RiDownloadCloud2Line } from 'react-icons/ri';
 
 //import api from '../../services/api'
 
-import { Container, Section, Content, Carousel, Section2, Page , Nav } from './styles';
+import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao } from './styles';
 import { Casas } from '../../utils/residencias';
 
 interface Casa {
-    id: number; 
-    endereco: string; 
-    bairro: string; 
-    valor: string; 
-    status: string; 
-    detalhes: string[]; 
-    condicoes: string; 
-    metragem: string; 
-    fracaolote: string; 
-    imagens: string[];  
+    id: number;
+    endereco: string;
+    bairro: string;
+    valor: string;
+    status: string;
+    detalhes: string[];
+    condicoes: string;
+    metragem: string;
+    fracaolote: string;
+    imagens: string[];
 }
 
 export default function Detalhe() {
@@ -50,10 +51,10 @@ export default function Detalhe() {
             alert('Erro ao cadastrar caso, tente novamente.')
         }
     }
-    const [detalheCasa, setDetalheCasa] = useState<Casa>(); 
-    
+    const [detalheCasa, setDetalheCasa] = useState<Casa>();
+
     useEffect(() => {
-        const id = useLocation().state;
+        const id = 1;
         const detalhe = Casas.find(p => p.id === Number(id));
         setDetalheCasa(detalhe);
         setFotos(detalhe?.imagens!);
@@ -91,50 +92,60 @@ export default function Detalhe() {
 
     return (
         <Container>
+            <BackgroudImage />
             <Content>
-                <Section>
+                <Header>
+                    <FiX size={28} onClick={() => history.push('/')} />
+                </Header>
+                <Body>
 
-                    {/* <img src={logoImg} alt="Be The Hero" /> */}
-                    <h2> {detalheCasa?.bairro} </h2>
-                    <p>  {detalheCasa?.endereco} </p>
-                    <ul>
-                        {
-                            detalheCasa?.detalhes.map(p =>
-                                <li>{p}</li>
-                            )
-                        }
-                    </ul>
-                    <p> Fração do Lote: {detalheCasa?.fracaolote} </p>
-                    <p> Metragem: {detalheCasa?.metragem} </p>
-                    <p> Condições: {detalheCasa?.condicoes} </p>
-                    <p> Status: {detalheCasa?.status} </p>
-                    <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
-
-                </Section>
-                <Section2>
-                    <Carousel>
-                      
-
-                    </Carousel>
-
-                    <Nav>
-                        <button onClick={() => handle('prev')}>
-                            <FiArrowLeft size={32} />
-                        </button>
-                        <button onClick={() => handle('next')}>
-                            <FiArrowRight size={32} />
-                        </button>
-                    </Nav>
+                    <Section>
 
 
-                    <button onClick={() => fileDownloadHandler()}>
-                        <a>Baixar Imagens</a>
-                    </button>
-                    <button onClick={() => history.push('/')}>
-                        <a>Voltar</a>
-                    </button>
+                        <h2> {detalheCasa?.bairro} </h2>
+                        <p>Endereço: <a>{detalheCasa?.endereco}</a> </p>
+                        <p>Bairro: <a>{detalheCasa?.bairro}</a> </p>
+                        <p> Fração do Lote: <a>{detalheCasa?.fracaolote} </a></p>
+                        <p> Metragem: <a>{detalheCasa?.metragem} </a></p>
+                        <p> Condições: <a>{detalheCasa?.condicoes} </a></p>
+                        <p> Status: <a>{detalheCasa?.status} </a></p>
+                        <p> Detalhes: </p>
+                        <ul>
+                            {
+                                detalheCasa?.detalhes.map(p =>
+                                    <li>{p}</li>
+                                )
+                            }
+                        </ul>
+                        <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
 
-                </Section2>
+                    </Section>
+
+                    <Section2>
+                        <Carousel>
+                            <img src={fotos[fotoSelecionada]} alt="foto" />
+                            <Navegador>
+                                <button onClick={() => handle('prev')}>
+                                    <FiArrowLeft size={15} />
+                                </button>
+                                <button onClick={() => handle('next')}>
+                                    <FiArrowRight size={15} />
+                                </button>
+                            </Navegador>
+                            <Acao>
+                                <button onClick={() => fileDownloadHandler()}>
+                                    <RiDownloadCloud2Line size={'1.8rem'} />
+                                    <a>Baixar Imagens</a>
+                                </button>
+
+                            </Acao>
+                        </Carousel>
+
+
+
+                    </Section2>
+
+                </Body>
             </Content>
 
         </Container>
