@@ -4,7 +4,7 @@ export const Casas = [
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
       bairro: "Residencial Canada, Goiânia",
       valor: "R$ 210.000,00",
-      status: "Concluída",
+      status: "Vendida",
       detalhes: [
         "2 quartos sendo 1 suite", 
         "Closet" , 
@@ -52,7 +52,7 @@ export const Casas = [
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
       bairro: "Residencial Canada, Goiânia",
       valor: "R$ 210.000,00",
-      status: "Concluída",
+      status: "Em Construção",
       detalhes: [
         "2 quartos sendo 1 suite", 
         "Closet" , 

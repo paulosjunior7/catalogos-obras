@@ -43,6 +43,8 @@ const Home = () => {
                 <div className="content">
                   <p className="title text--medium">
                     {p.endereco}
+                  </p>
+                  <p className="title text--medium">
                     {p.bairro}
                   </p>
                   <p className="title text--medium"></p>

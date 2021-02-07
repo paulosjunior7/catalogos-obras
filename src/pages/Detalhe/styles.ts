@@ -69,6 +69,8 @@ export const Body = styled.div`
     @media(max-width: 845px) {
         flex-direction: column-reverse;
     }
+
+    
 `
 
 
@@ -80,6 +82,7 @@ export const Section2 = styled.div`
     flex-direction: column;
 
     button {
+
         font-size: 1.2rem;
         margin: 12px 0px 0px;
         padding: 12px 30px;
@@ -189,7 +192,7 @@ export const Navegador = styled.div`
     width: 100%;
 
     button {
-        height: 25px;
+        height: 2.5rem;
         display: flex;
         width: 40%;
         align-items: center;
@@ -206,7 +209,7 @@ export const Acao = styled.div`
     flex-direction: row;
 
     button {
-        height: 25px;
+        height: 2.5rem;
         display: flex;
         align-items: center;
         justify-content: center;

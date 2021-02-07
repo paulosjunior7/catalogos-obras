@@ -44,17 +44,23 @@ export default createGlobalStyle`
     }
     @media (max-width: 1205px) {
         html {
-            font-size: 51.5% ;
+            font-size: 55.5% ;
         }
     }
     @media (max-width: 1024px) {
         html {
-            font-size: 46.5% ;
+            font-size: 52.5% ;
         }
     }
     @media (max-width: 768px) {
         html {
-            font-size: 41.5% ;
+            font-size: 47.5% ;
+        }
+    }
+
+    @media (max-width: 474px) {
+        html {
+            font-size: 46.5% ;
         }
     }
    

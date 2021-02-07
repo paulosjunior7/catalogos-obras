@@ -58,7 +58,7 @@ header nav ul li a:hover {
 h2 {
   color: rgb(75, 75, 75);
   font-size: 3.0rem;
-  line-height: 4.6rem;
+  line-height: 3.6rem;
 }
 
 h3 {
@@ -132,6 +132,10 @@ CARDS
 .text--medium {
   font-size: 1.6rem;
   line-height: 2.6rem;
+
+  @media (max-width: 474px) {
+    font-size: 2.0rem;
+  }
   font-weight: 400;
   color: #ecf0f1;
 }
