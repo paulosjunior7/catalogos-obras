@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -29,27 +28,17 @@ export const BackgroudImage = styled.div`
 export const Content = styled.div`
     margin-top: 3vw;
     z-index: 9999;
-    /* width: 100%;
-    max-width: 1020px; */
+    width: 100%;
+    max-width: 1000px;
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    
-   // display: flex;
-//justify-content: space-between;
- //   align-items: center;
- //   flex-wrap: nowrap;
   
 `
 
 export const Header = styled.div`
     display: flex;
     width: 100%;
-    height: 6rem;
+    height: 5.5rem;
     background-color: #236BAB;
     left: 0;
     top: 0;
@@ -67,7 +56,7 @@ export const Header = styled.div`
 export const Body = styled.div`
     justify-content: center;
     align-items: center;
-    padding: 35px;
+    padding: 30px;
     display: flex;
     
     @media(max-width: 845px) {
@@ -191,21 +180,21 @@ export const Navegador = styled.div`
         width: 100%;
         cursor: pointer;
         border: 0;
-        border-radius: 4px;
-        height: 2.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #3295CF;
-
+        border-radius: 4px;
+        height: 3.0rem;
         width: 45%;
 
         &:hover {
-            opacity: 0.9;
+            opacity: 1.9;
+            background-color: #3295CF;
         }
 
         svg {
-            color: #fff;
+            color: #ffff;
         }
     }
     
@@ -234,16 +223,23 @@ export const Acao = styled.div`
         align-items: center;
         justify-content: center;
         background-color: #3295CF;
-        color: #fff;
-        font-weight: bold;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        
+        width: 100%;
+        height: 3.5rem;
 
         &:hover {
-            opacity: 0.9;
+            opacity: 1.9;
+            background-color: #ffff;
         }
 
         svg {
-            color: #fff;
+         color: #ffff;
+        }
+
+        a { 
+            color: #ffff;
+            font-weight: bold;
         }
     }
 
