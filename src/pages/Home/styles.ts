@@ -41,7 +41,7 @@ export const Descricao = styled.div`
   p {
 
     &:first-child {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
 
     font-size: 1.5rem;
