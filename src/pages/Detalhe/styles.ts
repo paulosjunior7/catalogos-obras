@@ -31,6 +31,7 @@ export const Content = styled.div`
     max-width: 1000px;
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   
   
 `
 
@@ -67,7 +68,7 @@ export const Body = styled.div`
 export const Section2 = styled.div`
     width: 100%;
     max-width: 750px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 `
@@ -79,6 +80,7 @@ export const Section = styled.div`
     width: 100%;
     max-width: 750px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 
     h2 {
@@ -90,6 +92,10 @@ export const Section = styled.div`
 
     p {
         font-size: 1.5rem;
+
+        @media(max-width: 450px) {
+            font-size: 1.7rem;
+        }
         color: #333;
         line-height: 3.2rem;
         font-weight: bold;
@@ -203,6 +209,10 @@ export const Navegador = styled.div`
 `
 
 export const Acao = styled.div`
+    @media(max-width: 768px) {
+        display: none;
+    }
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;

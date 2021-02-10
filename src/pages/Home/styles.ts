@@ -172,7 +172,7 @@ CARDS
 }
 
 .content {
-  margin: 20px;
+  margin: 15px;
 }
 
 .title {
@@ -349,7 +349,7 @@ FORM
 }
 
 #form .button {
-  margin: 20px 8px 10px;
+  margin: 10px 8px 10px;
 }
 
 
