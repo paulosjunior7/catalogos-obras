@@ -17,10 +17,20 @@ export const Filter = styled.div`
   margin-top: 9px;
   input {
     border: 1px solid #ccc;
-    width: 100%;
+    width: 80%;
     border-radius: 4px;
     height: 30px;
     padding: 8px;
+    margin-right: 2px;
+  }
+
+  select {
+    width: 80%;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 30px;
+    padding: 4px;
+    margin-left: 2px;
   }
 `
 
