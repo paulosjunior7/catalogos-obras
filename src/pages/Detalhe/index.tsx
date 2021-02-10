@@ -126,10 +126,10 @@ export default function Detalhe() {
                             <img src={fotos[fotoSelecionada]} alt="foto" />
                             <Navegador>
                                 <button onClick={() => handle('prev')}>
-                                    <FiArrowLeft size={15} />
+                                    <FiArrowLeft size={18} />
                                 </button>
                                 <button onClick={() => handle('next')}>
-                                    <FiArrowRight size={15} />
+                                    <FiArrowRight size={18} />
                                 </button>
                             </Navegador>
                             <Acao>
@@ -137,12 +137,8 @@ export default function Detalhe() {
                                     <RiDownloadCloud2Line size={'1.8rem'} />
                                     <a>Baixar Imagens</a>
                                 </button>
-
                             </Acao>
                         </Carousel>
-
-
-
                     </Section2>
 
                 </Body>

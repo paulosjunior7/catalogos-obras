@@ -54,13 +54,13 @@ export default createGlobalStyle`
     }
     @media (max-width: 768px) {
         html {
-            font-size: 47.5% ;
+            font-size: 52.5% ;
         }
     }
 
     @media (max-width: 474px) {
         html {
-            font-size: 46.5% ;
+            font-size: 50.5% ;
         }
     }
    

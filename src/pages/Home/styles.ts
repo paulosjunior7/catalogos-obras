@@ -13,7 +13,7 @@ header {
   padding-right: 32px;
 
   p {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 }
 
@@ -26,6 +26,8 @@ header .container {
   max-width: 980px;
   
   margin: auto;
+  
+ 
 }
 
 header img {
@@ -57,8 +59,8 @@ header nav ul li a:hover {
 
 h2 {
   color: rgb(75, 75, 75);
-  font-size: 3.0rem;
-  line-height: 3.6rem;
+  font-size: 2.8rem;
+  line-height: 3rem;
 }
 
 h3 {
@@ -134,7 +136,7 @@ CARDS
   line-height: 2.6rem;
 
   @media (max-width: 474px) {
-    font-size: 2.0rem;
+    font-size: 1.9rem;
   }
   font-weight: 400;
   color: #ecf0f1;

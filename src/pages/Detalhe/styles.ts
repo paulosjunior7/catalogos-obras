@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -11,39 +11,45 @@ export const Container = styled.div`
     background-position: 0;
     background-size : 'cover';
     background-repeat: 'no-repeat' */
+    
 `;
 
 export const BackgroudImage = styled.div`
-    background-color: #3295CF;
+    background-image: linear-gradient( 135deg, #359ECB 10%, #359ECB 100%);
     height: 40vh;
     width: 100vw;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 0;
+    /* border-radius: 0 0 85% 85% / 10%; */
 
 `
 
 export const Content = styled.div`
     margin-top: 3vw;
     z-index: 9999;
-    width: 100%;
-    max-width: 1020px;
-   
+    /* width: 100%;
+    max-width: 1020px; */
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
    // display: flex;
 //justify-content: space-between;
  //   align-items: center;
  //   flex-wrap: nowrap;
-
   
 `
 
 export const Header = styled.div`
     display: flex;
     width: 100%;
-    height: 5.4rem;
+    height: 6rem;
     background-color: #236BAB;
     left: 0;
     top: 0;
@@ -62,15 +68,11 @@ export const Body = styled.div`
     justify-content: center;
     align-items: center;
     padding: 35px;
-    margin: auto;
-
     display: flex;
-
+    
     @media(max-width: 845px) {
         flex-direction: column-reverse;
     }
-
-    
 `
 
 
@@ -80,22 +82,6 @@ export const Section2 = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
-    button {
-
-        font-size: 1.2rem;
-        margin: 12px 0px 0px;
-        padding: 12px 30px;
-        text-decoration: none;
-        transition: all 150ms linear 0s;
-        width: 100%;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.9;
-        }
-    }
-    
 `
 
 
@@ -104,6 +90,8 @@ export const Section = styled.div`
     line-height: 20px;
     width: 100%;
     max-width: 750px;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         //margin: 49px 0 22px;
@@ -134,7 +122,7 @@ export const Section = styled.div`
 
     p {
         h2 {
-            font-size: 2.0rem;
+            font-size: 2.7rem;
             color: #333;
         }
     }
@@ -157,13 +145,14 @@ export const Carousel = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     img {
         width: 100%;
         height: 42.0rem;
         display: flex;
         justify-content: center;
         flex-direction: row;
-
+        border-radius: 8px;
       
     }
 `
@@ -178,7 +167,8 @@ export const Page = styled.div`
              border : 0;
              cursor: pointer;
              z-index: 9999;
-             
+             border-radius: 4px;
+             height: 2.8rem;
              svg {
                  color: #fff;
              }
@@ -192,12 +182,33 @@ export const Navegador = styled.div`
     width: 100%;
 
     button {
-        height: 2.5rem;
-        display: flex;
         width: 40%;
+        font-size: 1.2rem;
+        margin: 8px 0px 0px;
+        padding: 12px 30px;
+        text-decoration: none;
+        transition: all 150ms linear 0s;
+        width: 100%;
+        cursor: pointer;
+        border: 0;
+        border-radius: 4px;
+        height: 2.8rem;
+        display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #3295CF;
+
+        width: 45%;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        svg {
+            color: #fff;
+        }
     }
+    
 
     svg {
     }
@@ -209,10 +220,31 @@ export const Acao = styled.div`
     flex-direction: row;
 
     button {
-        height: 2.5rem;
+        font-size: 1.2rem;
+        margin: 8px 0px 0px;
+        padding: 12px 30px;
+        text-decoration: none;
+        transition: all 150ms linear 0s;
+        width: 100%;
+        cursor: pointer;
+        border: 0;
+        border-radius: 4px;
+        height: 2.9rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #3295CF;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        svg {
+            color: #fff;
+        }
     }
 
     svg {
