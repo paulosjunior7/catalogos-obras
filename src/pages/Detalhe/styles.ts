@@ -79,28 +79,31 @@ export const Section2 = styled.div`
 
 export const Contato = styled.div`
     display: flex;
+    width: 100%;
+    margin-bottom: 12px;
 `
 
 export const Whatsapp = styled(ReactWhatsapp)`
-    height: 30px;
+    height: 32px;
     padding : 8px;
     display: flex;
     align-items: center;
-    border-radius: 8px;
-    width: 40%;
+    border-radius: 4px;
     justify-content: center;
     border: 0;
+    background-color: #2FB86E;
 
     &:last-child {
         margin-left: 4px;
     }
     a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        color: #fff;
     }
 
     svg {
         margin-right: 4px;
-        color: green;
+        color: #fff;
 
     }
 `

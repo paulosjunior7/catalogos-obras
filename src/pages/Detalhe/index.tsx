@@ -111,13 +111,13 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
 
                         <Contato>
-                            <Whatsapp number="62983002211" message="Hello World!!!" >
-                                <ImWhatsapp size={17} />
+                            <Whatsapp number="5562983002211" message="Hello World!!!" >
+                                <ImWhatsapp size={'1.8rem'} />
                                 <a>Eng.Juliana Machado</a>
                             </Whatsapp>
 
-                            <Whatsapp number="62992046138" message="Hello World!!!" >
-                                <ImWhatsapp size={17} />
+                            <Whatsapp number="5562992046138" message="Hello World!!!" >
+                                <ImWhatsapp size={'1.8rem'} />
                                 <a>Eng.Antônio Carlos</a>
                             </Whatsapp>
                         </Contato>

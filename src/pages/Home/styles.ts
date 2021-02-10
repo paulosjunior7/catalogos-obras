@@ -13,7 +13,7 @@ export const MenuBar = styled.div`
 
 export const Filter = styled.div`
   display: flex;
-  width: 100%;
+  width: 95%;
   margin-top: 9px;
   input {
     border: 1px solid #ccc;
