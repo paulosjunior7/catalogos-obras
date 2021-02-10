@@ -226,7 +226,7 @@ export const Acao = styled.div`
         border-radius: 4px;
         
         width: 100%;
-        height: 3.5rem;
+        height: 3.4rem;
 
         &:hover {
             opacity: 1.9;
