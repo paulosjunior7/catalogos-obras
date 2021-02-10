@@ -3,11 +3,12 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory, match } from 'react-router-dom'
 import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
+import { ImWhatsapp } from 'react-icons/im';
 
 
 //import api from '../../services/api'
 
-import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao } from './styles';
+import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato , Whatsapp } from './styles';
 import { Casas } from '../../utils/residencias';
 
 interface Casa {
@@ -27,7 +28,7 @@ interface Props {
     match: any;
 }
 
-const Detalhe:React.FC<Props> = ({ match }) =>  {
+const Detalhe: React.FC<Props> = ({ match }) => {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [value, setValue] = useState('');
@@ -48,7 +49,7 @@ const Detalhe:React.FC<Props> = ({ match }) =>  {
         }
 
         Pesquisar()
-        
+
     }, [match.params.id])
 
     const fileDownloadHandler = async () => {
@@ -80,6 +81,8 @@ const Detalhe:React.FC<Props> = ({ match }) =>  {
         }
     }
 
+
+
     return (
         <Container>
             <BackgroudImage />
@@ -107,13 +110,25 @@ const Detalhe:React.FC<Props> = ({ match }) =>  {
                         </ul>
                         <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
 
+                        <Contato>
+                            <Whatsapp number="62983002211" message="Hello World!!!" >
+                                <ImWhatsapp size={17} />
+                                <a>Eng.Juliana Machado</a>
+                            </Whatsapp>
+
+                            <Whatsapp number="62992046138" message="Hello World!!!" >
+                                <ImWhatsapp size={17} />
+                                <a>Eng.Antônio Carlos</a>
+                            </Whatsapp>
+                        </Contato>
+
                     </Section>
 
                     <Section2>
                         <Carousel>
-                            { fotos  && (
+                            {fotos && (
                                 <img src={fotos[fotoSelecionada]} alt="foto" />
-                            ) 
+                            )
                             }
                             <Navegador>
                                 <button onClick={() => handle('prev')}>

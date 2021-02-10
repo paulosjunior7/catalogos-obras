@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+
+import ReactWhatsapp from 'react-whatsapp';
+
+
 export const Container = styled.div`
     width: 100vw;
     margin: 0 auto;
@@ -73,7 +77,33 @@ export const Section2 = styled.div`
     flex-direction: column;
 `
 
+export const Contato = styled.div`
+    display: flex;
+`
 
+export const Whatsapp = styled(ReactWhatsapp)`
+    height: 30px;
+    padding : 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    width: 40%;
+    justify-content: center;
+    border: 0;
+
+    &:last-child {
+        margin-left: 4px;
+    }
+    a {
+        font-size: 1.2rem;
+    }
+
+    svg {
+        margin-right: 4px;
+        color: green;
+
+    }
+`
 
 export const Section = styled.div`
     line-height: 20px;
