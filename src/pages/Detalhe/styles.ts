@@ -5,7 +5,6 @@ export const Container = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: #FAFBFC;
     /* background-image: url("https://wallpaperaccess.com/full/773716.jpg");
     background-position: 0;
     background-size : 'cover';

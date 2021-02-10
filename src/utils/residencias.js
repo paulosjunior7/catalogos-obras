@@ -18,9 +18,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/1000/600",
+        "https://picsum.photos/id/1001/600",
+        "https://picsum.photos/id/1002/600"
       ]
     },
     {
@@ -42,9 +42,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/1003/600",
+        "https://picsum.photos/id/111/600",
+        "https://picsum.photos/id/1/600"
       ]
     },
     {
@@ -66,9 +66,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/1004/600",
+        "https://picsum.photos/id/1005/600",
+        "https://picsum.photos/id/1054/600"
       ]
     },
     {
@@ -90,9 +90,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/1060/600",
+        "https://picsum.photos/id/1067/600",
+        "https://picsum.photos/id/1071/600"
       ]
     },
     {
@@ -114,9 +114,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/1079/600",
+        "https://picsum.photos/id/113/600",
+        "https://picsum.photos/id/119/600"
       ]
     },
     {
@@ -138,9 +138,9 @@ export const Casas = [
       metragem: "90m²",
       fracaolote: "150m²",
       imagens: [
-        "https://placekitten.com/200/300",
-        "https://placekitten.com/300/300",
-        "https://placekitten.com/400/300"
+        "https://picsum.photos/id/133/600",
+        "https://picsum.photos/id/139/600",
+        "https://picsum.photos/id/152/600"
       ]
     }
     
