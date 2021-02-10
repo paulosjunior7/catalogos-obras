@@ -1,5 +1,64 @@
 import styled from 'styled-components';
 
+export const MenuBar = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  
+  width: 90%;
+  max-width: 980px;
+  
+  margin: auto;
+`
+
+export const Filter = styled.div`
+  display: flex;
+  width: 100%;
+  margin-top: 9px;
+  input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 4px;
+    height: 30px;
+    padding: 8px;
+  }
+`
+
+export const Descricao = styled.div`
+  padding: 10px;
+  color: #ecf0f1;
+  
+  p {
+
+    &:first-child {
+      font-size: 1.6rem;
+    }
+
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+    @media (max-width: 474px) {
+      font-size: 1.9rem;
+    }
+  }
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  
+    p {
+      &:last-child {
+        margin-left: auto;
+        padding: 5px 20px;
+        border-radius: 10px;
+        background-color: #236BAB;
+        color: #fff;
+        filter: brightness(90%);
+      }
+    }
+  }
+`
+
 export const Container = styled.div`
 
 header {
@@ -91,7 +150,7 @@ h3 {
 HERO
 ==================*/
 section.hero {
-  margin: 40px 0;
+  margin: 12px 0;
 }
 
 section.hero .container {
@@ -107,7 +166,6 @@ section.hero p {
   color: rgb(154, 142, 191);
   font-size: 1.8rem;
   line-height: 3.2rem;
-  margin: 10px 0px 0px;
 }
 
 
@@ -188,8 +246,9 @@ CARDS
 .price {
   margin-left: auto;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #236BAB;
+  color: #fff;
   filter: brightness(90%);
 }
 

@@ -1,8 +1,9 @@
 
 import React, { useEffect, useState } from 'react'
-import { Link, useHistory, useLocation } from 'react-router-dom'
+import { Link, useHistory, match } from 'react-router-dom'
 import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
+
 
 //import api from '../../services/api'
 
@@ -22,7 +23,11 @@ interface Casa {
     imagens: string[];
 }
 
-export default function Detalhe() {
+interface Props {
+    match: any;
+}
+
+const Detalhe:React.FC<Props> = ({ match }) =>  {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     const [value, setValue] = useState('');
@@ -32,34 +37,19 @@ export default function Detalhe() {
 
     const history = useHistory()
 
-    async function handleNewIncident(e: any) {
-        e.preventDefault()
-        const data = {
-            title,
-            description,
-            value,
-        }
-        try {
-            // await api.post('/incidents', data, {
-            //     headers: {
-            //         Authorization: ongId,
-            //     }
-            // })
-
-            history.push('/profile')
-        } catch (err) {
-            alert('Erro ao cadastrar caso, tente novamente.')
-        }
-    }
     const [detalheCasa, setDetalheCasa] = useState<Casa>();
 
     useEffect(() => {
-        const id = 1;
-        const detalhe = Casas.find(p => p.id === Number(id));
-        setDetalheCasa(detalhe);
-        setFotos(detalhe?.imagens!);
-        console.log(detalhe);
-    }, [])
+
+        async function Pesquisar() {
+            const detalhe = Casas.find(p => p.id === Number(match.params.id));
+            setDetalheCasa(detalhe);
+            setFotos(detalhe?.imagens!);
+        }
+
+        Pesquisar()
+        
+    }, [match.params.id])
 
     const fileDownloadHandler = async () => {
         for (var i = 0; i < fotos.length; i++) {
@@ -100,8 +90,6 @@ export default function Detalhe() {
                 <Body>
 
                     <Section>
-
-
                         <h2> {detalheCasa?.bairro} </h2>
                         <p>Endereço: <a>{detalheCasa?.endereco}</a> </p>
                         <p>Bairro: <a>{detalheCasa?.bairro}</a> </p>
@@ -123,7 +111,10 @@ export default function Detalhe() {
 
                     <Section2>
                         <Carousel>
-                            <img src={fotos[fotoSelecionada]} alt="foto" />
+                            { fotos  && (
+                                <img src={fotos[fotoSelecionada]} alt="foto" />
+                            ) 
+                            }
                             <Navegador>
                                 <button onClick={() => handle('prev')}>
                                     <FiArrowLeft size={18} />
@@ -147,3 +138,5 @@ export default function Detalhe() {
         </Container>
     )
 }
+
+export default Detalhe;

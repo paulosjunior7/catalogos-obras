@@ -1,18 +1,36 @@
-import react from 'react';
+import react, { useState } from 'react';
 import Header from '../../components/Header'
 import { Casas } from '../../utils/residencias'
 
 import { Link, useHistory } from 'react-router-dom'
-import { Container } from './styles'
+import { Container, Descricao, Filter , MenuBar } from './styles'
+
+interface CasasModal {
+  id: number,
+  endereco: string,
+  bairro: string,
+  valor: string,
+  status: string,
+  detalhes: string[],
+  condicoes: string,
+  metragem: string,
+  fracaolote: string,
+  imagens: string[]
+}
 
 const Home = () => {
   const history = useHistory()
+  const [ pesquisa, SetPesquisa ] = useState('');
 
   function handleDetalhe(id: number) {
-    history.push('/detalhe', {
-      id: 1
-    });
+    history.push(`/detalhe/${id}`);
   }
+  
+  const filteredValues = Casas.filter((casas: CasasModal) => {
+      return (
+        casas.bairro.toLowerCase().includes(pesquisa.toLowerCase())
+      )
+  });
 
   return (
     <Container>
@@ -20,77 +38,48 @@ const Home = () => {
         <p>JMS Construção e Projeto Engenharia</p>
       </header>
 
+
       <section className="hero">
-        <div className="container">
+        <MenuBar>
           <div>
             <h2>
               Relação de casas disponíveis para venda
           </h2>
           </div>
-
-        </div>
+            <Filter>
+              <input type="text" placeholder="Pesquisar bairro" onChange={e => SetPesquisa(e.target.value)} />
+            </Filter>
+        </MenuBar>
       </section>
 
       <main>
         <section className="cards">
 
           {
-            Casas.map(p =>
+            filteredValues.map(p =>
               <div className="card" key={p.id} onClick={() => handleDetalhe(p.id)}>
                 <div className="image">
                   <img src={p.imagens[1]} />
                 </div>
-                <div className="content">
-                  <p className="title text--medium">
-                    {p.endereco}
-                  </p>
-                  <p className="title text--medium">
-                    {p.bairro}
-                  </p>
-                  <p className="title text--medium"></p>
-                  <div className="info">
-                    <p className="text--medium">{p.valor}</p>
-                    <p className="price text--medium">{p.status}</p>
+
+                <Descricao>
+                  <p>{p.bairro}</p>
+                  <p>{p.endereco}</p>
+                  <p>{p.metragem}</p>
+                  <div>
+                    <p>{p.valor}</p>
+                    <p>{p.status}</p>
                   </div>
-                </div>
+                </Descricao>
+
               </div>
             )
-
           }
 
         </section>
       </main>
 
-      {/* <section id="form">
-        <form action="">
-          <h3>Solicitar Orçamento!</h3>
-          <div className="form-group">
-            <input className="input-control" placeholder="Nome" />
-
-            <input type="email" className="input-control" placeholder="Email" />
-          </div>
-
-          <div className="form-group">
-            <input className="input-control" placeholder="Empresa" />
-          </div>
-
-          <div className="form-group">
-            <input className="input-control" placeholder="Endereço" />
-          </div>
-
-          <div className="form-group">
-            <input className="input-control" placeholder="Cidade" style={{ flex: '3 2' }} />
-            <input className="input-control" placeholder="Estado" style={{ flex: '1' }} />
-            <input className="input-control" placeholder="CEP" style={{ flex: '1' }} />
-          </div>
-
-          <div className="form-group">
-            <button type="submit" className="button">Save</button>
-
-          </div>
-
-        </form>
-      </section> */}
+    
 
       <div className="modal-overlay">
         <div className="modal">

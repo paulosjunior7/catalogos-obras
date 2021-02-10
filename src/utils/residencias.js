@@ -2,7 +2,7 @@ export const Casas = [
     {
       id: 1,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Setor Moinho dos Ventos",
       valor: "R$ 210.000,00",
       status: "Vendida",
       detalhes: [
@@ -24,9 +24,9 @@ export const Casas = [
       ]
     },
     {
-      id: 1,
+      id: 2,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Residencial Veredas dos Buritis",
       valor: "R$ 210.000,00",
       status: "Concluída",
       detalhes: [
@@ -48,9 +48,9 @@ export const Casas = [
       ]
     },
     {
-      id: 1,
+      id: 3,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Setor Três Marias",
       valor: "R$ 210.000,00",
       status: "Em Construção",
       detalhes: [
@@ -72,9 +72,9 @@ export const Casas = [
       ]
     },
     {
-      id: 1,
+      id: 4,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Setor Bueno",
       valor: "R$ 210.000,00",
       status: "Concluída",
       detalhes: [
@@ -96,9 +96,9 @@ export const Casas = [
       ]
     },
     {
-      id: 1,
+      id: 5,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Jardim Petropolis",
       valor: "R$ 210.000,00",
       status: "Concluída",
       detalhes: [
@@ -120,9 +120,9 @@ export const Casas = [
       ]
     },
     {
-      id: 1,
+      id: 6,
       endereco: "Rua RC 8, Quadra 11, Lote 14 , Casa 1",
-      bairro: "Residencial Canada, Goiânia",
+      bairro: "Setor Fortiville",
       valor: "R$ 210.000,00",
       status: "Concluída",
       detalhes: [
