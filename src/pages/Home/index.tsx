@@ -6,17 +6,21 @@ import { Link, useHistory } from 'react-router-dom'
 import { Container, Descricao, Filter, MenuBar } from './styles'
 
 interface CasasModal {
-  id: number,
-  endereco: string,
-  bairro: string,
-  valor: string,
-  status: string,
-  detalhes: string[],
-  condicoes: string,
-  metragem: string,
-  fracaolote: string,
-  imagens: string[]
+  id: number; 
+  endereco: string; 
+  bairro: string; 
+  cidade: string; 
+  valor: string; 
+  status: string; 
+  previsaoConclusao: string; 
+  detalhes: string[]; 
+  condicoes:  string; 
+  areaConstruida: string; 
+  lote: string; 
+  fracaolote: string; 
+  imagens: string[]; 
 }
+
 
 const Home = () => {
   const history = useHistory()
@@ -78,13 +82,14 @@ const Home = () => {
             filteredValues.map(p =>
               <div className="card" key={p.id} onClick={() => handleDetalhe(p.id)}>
                 <div className="image">
-                  <img src={p.imagens[1]} />
+                  <img src={p.imagens[0]} />
                 </div>
 
                 <Descricao>
                   <p>{p.bairro}</p>
                   <p>{p.endereco}</p>
-                  <p>{p.metragem}</p>
+                  <p>{p.areaConstruida}</p>
+                  <p>{p.previsaoConclusao}</p>
                   <div>
                     <p>{p.valor}</p>
                     <p>{p.status}</p>

@@ -92,6 +92,7 @@ export const Whatsapp = styled(ReactWhatsapp)`
     justify-content: center;
     border: 0;
     background-color: #2FB86E;
+    cursor: pointer;
 
     &:last-child {
         margin-left: 4px;

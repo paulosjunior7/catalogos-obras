@@ -8,21 +8,26 @@ import { ImWhatsapp } from 'react-icons/im';
 
 //import api from '../../services/api'
 
-import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato , Whatsapp } from './styles';
+import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp } from './styles';
 import { Casas } from '../../utils/residencias';
 
 interface Casa {
-    id: number;
-    endereco: string;
-    bairro: string;
-    valor: string;
-    status: string;
-    detalhes: string[];
-    condicoes: string;
-    metragem: string;
-    fracaolote: string;
-    imagens: string[];
+    id: number; 
+    endereco: string; 
+    bairro: string; 
+    cidade: string; 
+    valor: string; 
+    status: string; 
+    previsaoConclusao: string; 
+    detalhes: string[]; 
+    condicoes:  string; 
+    areaConstruida: string; 
+    lote: string; 
+    fracaolote: string; 
+    imagens: string[]; 
 }
+
+
 
 interface Props {
     match: any;
@@ -94,12 +99,15 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
                     <Section>
                         <h2> {detalheCasa?.bairro} </h2>
-                        <p>Endereço: <a>{detalheCasa?.endereco}</a> </p>
-                        <p>Bairro: <a>{detalheCasa?.bairro}</a> </p>
-                        <p> Fração do Lote: <a>{detalheCasa?.fracaolote} </a></p>
-                        <p> Metragem: <a>{detalheCasa?.metragem} </a></p>
+                        <p> Endereço: <a>{detalheCasa?.endereco}</a> </p>
+                        <p> Bairro: <a>{detalheCasa?.bairro}</a> </p>
+                        <p> Cidade: <a>{detalheCasa?.cidade}</a> </p>
+                        {detalheCasa?.fracaolote != "" && <p> Fração do Lote: <a>{detalheCasa?.fracaolote} </a></p>}
+                        <p> Área Construida: <a>{detalheCasa?.areaConstruida} </a></p>
+                        <p> Lote: <a>{detalheCasa?.lote}</a> </p>
                         <p> Condições: <a>{detalheCasa?.condicoes} </a></p>
                         <p> Status: <a>{detalheCasa?.status} </a></p>
+                        <p> Previsão de Conclusão: <a>{detalheCasa?.previsaoConclusao} </a></p>
                         <p> Detalhes: </p>
                         <ul>
                             {
@@ -111,7 +119,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
 
                         <Contato>
-                            <Whatsapp number="5562983002211"  message={`Olá, Gostaria de mais informações das casas disponiveis para venda`} >
+                            <Whatsapp number="5562983002211" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`} >
                                 <ImWhatsapp size={'1.8rem'} />
                                 <a>Eng.Juliana Machado</a>
                             </Whatsapp>
