@@ -35,8 +35,6 @@ export const Content = styled.div`
     max-width: 1000px;
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-   
-  
 `
 
 export const Header = styled.div`
@@ -58,10 +56,10 @@ export const Header = styled.div`
 `
 
 export const Body = styled.div`
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    display: flex;
     
     @media(max-width: 845px) {
         flex-direction: column-reverse;
@@ -72,9 +70,8 @@ export const Body = styled.div`
 export const Section2 = styled.div`
     width: 100%;
     max-width: 750px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    
 `
 
 export const Contato = styled.div`

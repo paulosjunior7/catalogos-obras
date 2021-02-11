@@ -62,6 +62,7 @@ export const Descricao = styled.div`
         padding: 5px 20px;
         border-radius: 10px;
         background-color: #236BAB;
+        border: 0.5px solid #ccc;
         color: #fff;
         filter: brightness(90%);
       }

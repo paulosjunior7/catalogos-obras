@@ -87,7 +87,9 @@ const Detalhe: React.FC<Props> = ({ match }) => {
     }
 
 
+    const [imageLoaded, setImageLoaded] = useState(false);
 
+    // src image and trace image url
     return (
         <Container>
             <BackgroudImage />
@@ -134,8 +136,18 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
                     <Section2>
                         <Carousel>
+                            {!imageLoaded && (
+                                <h3>Carregando..</h3>
+                            )}
                             {fotos && (
-                                <img src={fotos[fotoSelecionada]} alt="foto" />
+                                <img src={fotos[fotoSelecionada]} 
+                                alt="foto" 
+                                loading="lazy" 
+                                style={{
+                                    opacity: imageLoaded ? "1" : "0",
+                                  }}   
+                                  onLoad={() => setImageLoaded(true)} 
+                            />
                             )
                             }
                             <Navegador>
