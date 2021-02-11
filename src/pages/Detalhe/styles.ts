@@ -176,12 +176,10 @@ export const Carousel = styled.div`
 
     img {
         width: 100%;
-        height: 42.0rem;
         display: flex;
         justify-content: center;
         flex-direction: row;
         border-radius: 8px;
-      
     }
 `
 
