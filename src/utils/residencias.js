@@ -38,6 +38,94 @@ export const Casas = [
         "https://docs.google.com/uc?id=1qXfP_a39BrqFSgVjrDhOcqA-yBWC8kAH",
         "https://docs.google.com/uc?id=1Dc4_jJb1HnmVkSKWP0hepFTxpv1jP8mi",
       ]
+    },
+    {
+      id: 2,
+      endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
+      bairro: "Três Marias",
+      cidade: "Goiânia",
+      valor: "R$ 360.000,00",
+      status: "Em Construção",
+      previsaoConclusao: "Abril/2021",
+      detalhes: [
+        "3 Quartos, sendo 1 suíte",
+        "Suíte com closet e banheiro amplo",
+        "Banheiro Social",
+        "Sala com cozinha integrada com bancada em ilha",
+        "Area de Serviço coberta",
+        "Garagem coberta pra 2 carros",
+        "Varanda Gourmet com churrasqueira",
+        "Piso Porcelanato",
+        "Acabamento alto padrão",
+        "Aquecimento solar"
+      ],
+      condicoes: "Financiamento bancário ou a vista",
+      areaConstruida: "105 m²",
+      lote: "",
+      fracaolote: "150m²",
+      imagens: [
+        "https://docs.google.com/uc?id=1iQNbo2WA_Gep2tHBoPhoF3q7sb5zKxaX",
+      ]
+    },
+    {
+      id: 3,
+      endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 2",
+      bairro: "Três Marias",
+      cidade: "Goiânia",
+      valor: "R$ 360.000,00",
+      status: "Em Construção",
+      previsaoConclusao: "Abril/2021",
+      detalhes: [
+        "3 Quartos, sendo 1 suíte",
+        "Suíte com closet e banheiro amplo",
+        "Banheiro Social",
+        "Sala com cozinha integrada com bancada em ilha",
+        "Area de Serviço coberta",
+        "Garagem coberta pra 2 carros",
+        "Varanda Gourmet com churrasqueira",
+        "Piso Porcelanato",
+        "Acabamento alto padrão",
+        "Aquecimento solar"
+      ],
+      condicoes: "Financiamento bancário ou a vista",
+      areaConstruida: "105 m²",
+      lote: "",
+      fracaolote: "150m²",
+      imagens: [
+        "https://docs.google.com/uc?id=1iQNbo2WA_Gep2tHBoPhoF3q7sb5zKxaX",
+      ]
+    },
+    {
+      id: 4,
+      endereco: "Rua Vb-21 Quadra 18, Lote 15",
+      bairro: "Vereda dos Buritis",
+      cidade: "Goiânia",
+      valor: "R$ 460.000,00",
+      status: "Em Construção",
+      previsaoConclusao: "Abril/2021",
+      detalhes: [
+        "Somente 1 casa no lote",
+        "2 suítes plenas",
+        "1 Suíte Master com closet",
+        "Sala com cozinha integrada com bancada em ilha",
+        "Area de Serviço coberta",
+        "Garagem coberta pra 2 carros",
+        "Varanda Gourmet com churrasqueira",
+        "Lavabo",
+        "Piscina",
+        "Piso Porcelanato",
+        "Acabamento alto padrão",
+        "Aquecimento solar"
+      ],
+      condicoes: "Financiamento bancário ou a vista",
+      areaConstruida: "147 m²",
+      lote: "300 m²",
+      fracaolote: "",
+      imagens: [
+        "https://docs.google.com/uc?id=1gyQNd0g-QoPSarIEGxGJ4GLlNw--hrqz",
+        "https://docs.google.com/uc?id=1bqW1eq_1c2lIxfYy4Q3xaKq4EBJWf1a1",
+        "https://docs.google.com/uc?id=1mIVLAJ975wWx36iT4rLJwsY5CrTJ5sn-",
+      ]
     }
   ];
 

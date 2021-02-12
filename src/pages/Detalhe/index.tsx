@@ -137,7 +137,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                     <Section2>
                         <Carousel>
                             {!imageLoaded && (
-                                <h3>Carregando..</h3>
+                                <h4>Carregando imagem, aguarde...</h4>
                             )}
                             {fotos && (
                                 <img src={fotos[fotoSelecionada]} 

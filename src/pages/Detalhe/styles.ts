@@ -62,7 +62,7 @@ export const Body = styled.div`
     padding: 30px;
     
     @media(max-width: 845px) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 `
 
@@ -139,7 +139,7 @@ export const Section = styled.div`
 
     ul, li {
         margin-left: 15px;
-        font-size:  1.4rem;
+        font-size:  1.6rem;
         color: #333;
         line-height: 3.2rem;
         line-height: 2.0rem;

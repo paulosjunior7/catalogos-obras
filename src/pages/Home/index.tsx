@@ -59,7 +59,7 @@ const Home = () => {
               {
                 Casas.map((ca:CasasModal) => 
                   {
-                    <option key={ca.status} value={ca.status}>{ca.status}</option>
+                    <option key={ca.id} value={ca.status}>{ca.status}</option>
                   }
                 )
               }
