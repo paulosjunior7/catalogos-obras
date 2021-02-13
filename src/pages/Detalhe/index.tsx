@@ -143,6 +143,19 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                     <Section2>
                         <Carousel>
 
+                            <Navegador>
+                                <button onClick={() => handle('prev')}>
+                                    <FiArrowLeft size={18} />
+                                </button>
+                                <a>
+                                    {fotoSelecionada + 1}/{fotos.length}
+                                </a>
+                                <button onClick={() => handle('next')}>
+                                    <FiArrowRight size={18} />
+                                </button>
+                            </Navegador>
+
+
                             <div>
                                 {!imageLoaded && (
                                     <div className="c-loader"></div>
@@ -157,28 +170,17 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                     style={{
                                         opacity: imageLoaded ? "1" : "0",
                                     }}
-                                  onLoad={() => setImageLoaded(true)}
+                                    onLoad={() => setImageLoaded(true)}
                                 />
                             )
                             }
-
-                            <Navegador>
-                                <button onClick={() => handle('prev')}>
-                                    <FiArrowLeft size={18} />
-                                </button>
-                                <a>
-                                    {fotoSelecionada + 1}/{fotos.length}
-                                </a>
-                                <button onClick={() => handle('next')}>
-                                    <FiArrowRight size={18} />
-                                </button>
-                            </Navegador>
                             <Acao>
                                 <button onClick={() => fileDownloadHandler()}>
                                     <RiDownloadCloud2Line size={'1.8rem'} />
                                     <a>Baixar Imagens</a>
                                 </button>
                             </Acao>
+
                         </Carousel>
                     </Section2>
 

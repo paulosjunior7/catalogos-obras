@@ -232,13 +232,13 @@ export const Navegador = styled.div`
     width: 100%;
 
     button {
-        width: 40%;
+        width: 100%;
+        width: 20%;
         font-size: 1.2rem;
-        margin: 8px 0px 0px;
+        margin: 7px 0px 0px;
         padding: 12px 30px;
         text-decoration: none;
         transition: all 150ms linear 0s;
-        width: 100%;
         cursor: pointer;
         border: 0;
         display: flex;
@@ -260,13 +260,15 @@ export const Navegador = styled.div`
     }
 
     a {
-        margin-top: 1.2rem;
-
+        margin-top: 1.4rem;
+        margin-left: 3px;
+        margin-right: 3px;
     }
-    
 
     svg {
     }
+
+    margin-bottom: 8px;
 `
 
 export const Acao = styled.div`
@@ -280,7 +282,7 @@ export const Acao = styled.div`
 
     button {
         font-size: 1.2rem;
-        margin: 8px 0px 0px;
+        margin: 7px 0px 0px;
         padding: 12px 30px;
         text-decoration: none;
         transition: all 150ms linear 0s;
