@@ -194,7 +194,6 @@ export const Carousel = styled.div`
 
     img {
         width: 100%;
-        max-height: 1000px;
         display: flex;
         justify-content: center;
         flex-direction: row;
