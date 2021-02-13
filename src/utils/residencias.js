@@ -123,8 +123,7 @@ export const Casas = [
       fracaolote: "",
       imagens: [
         "https://docs.google.com/uc?id=1gyQNd0g-QoPSarIEGxGJ4GLlNw--hrqz",
-        "https://docs.google.com/uc?id=1bqW1eq_1c2lIxfYy4Q3xaKq4EBJWf1a1",
-        "https://docs.google.com/uc?id=1mIVLAJ975wWx36iT4rLJwsY5CrTJ5sn-",
+        "https://docs.google.com/uc?id=1hJ5EIV4G8OfeyQIAZCbO39OTu-rpBY5B",
       ]
     }
   ];
