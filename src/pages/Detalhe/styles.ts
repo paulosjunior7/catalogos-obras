@@ -194,10 +194,10 @@ export const Carousel = styled.div`
 
     img {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     }
 
    
