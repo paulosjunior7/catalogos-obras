@@ -172,7 +172,8 @@ export const Carousel = styled.div`
     flex-direction: column;
 
     div {
-         &:first-child {
+         
+            &:first-child {
             justify-content: center;
             display: flex;
          }
@@ -185,38 +186,26 @@ export const Carousel = styled.div`
         height: 50px;
         width: 50px;
 
-        img {
-                /* Set rules to fill background */
-                min-height: 100%;
-                min-width: 1024px;
-                    
-                /* Set up proportionate scaling */
-                width: 100%;
-                height: auto;
-                    
-                /* Set up positioning */
-                position: fixed;
-                top: 0;
-                left: 0;
-                }
-
-                @media screen and (max-width: 1024px) { /* Specific to this particular image */
-                    img {
-                        left: 50%;
-                        margin-left: -512px;   /* 50% */
-                    }
-                }
-    }
+       
 
         @keyframes is-rotating {
-        to {
-            transform: rotate(1turn);
+            to {
+                transform: rotate(1turn);
+            }
         }
     }
+    }
 
+
+    img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 8px;
+    }
     
-}
-`
+`;
 
 export const Page = styled.div`
     display : flex;
