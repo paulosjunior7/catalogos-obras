@@ -184,6 +184,12 @@ export const Carousel = styled.div`
         border-top-color: #51d4db;
         height: 50px;
         width: 50px;
+
+        img {
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+        }
     }
 
         @keyframes is-rotating {
@@ -192,11 +198,7 @@ export const Carousel = styled.div`
         }
     }
 
-    img {
-        display:flex;
-        flex-direction: row;
-        width: 100%;
-    }
+    
 }
 `
 
