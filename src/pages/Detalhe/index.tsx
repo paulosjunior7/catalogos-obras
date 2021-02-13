@@ -12,19 +12,19 @@ import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navega
 import { Casas } from '../../utils/residencias';
 
 interface Casa {
-    id: number; 
-    endereco: string; 
-    bairro: string; 
-    cidade: string; 
-    valor: string; 
-    status: string; 
-    previsaoConclusao: string; 
-    detalhes: string[]; 
-    condicoes:  string; 
-    areaConstruida: string; 
-    lote: string; 
-    fracaolote: string; 
-    imagens: string[]; 
+    id: number;
+    endereco: string;
+    bairro: string;
+    cidade: string;
+    valor: string;
+    status: string;
+    previsaoConclusao: string;
+    detalhes: string[];
+    condicoes: string;
+    areaConstruida: string;
+    lote: string;
+    fracaolote: string;
+    imagens: string[];
 }
 
 
@@ -44,6 +44,12 @@ const Detalhe: React.FC<Props> = ({ match }) => {
     const history = useHistory()
 
     const [detalheCasa, setDetalheCasa] = useState<Casa>();
+
+    useEffect(() => {
+        fotos.forEach((image) => {
+            new Image().src = image
+        });
+    })
 
     useEffect(() => {
 
@@ -136,24 +142,33 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
                     <Section2>
                         <Carousel>
-                            {!imageLoaded && (
-                                <h4>Carregando imagem, aguarde...</h4>
-                            )}
+
+                            <div>
+                                {!imageLoaded && (
+                                    <div className="c-loader"></div>
+                                )}
+                            </div>
+
+
                             {fotos && (
-                                <img src={fotos[fotoSelecionada]} 
-                                alt="foto" 
-                                loading="lazy" 
-                                style={{
-                                    opacity: imageLoaded ? "1" : "0",
-                                  }}   
-                                  onLoad={() => setImageLoaded(true)} 
-                            />
+                                <img src={fotos[fotoSelecionada]}
+                                    alt="foto"
+                                    loading="lazy"
+                                    style={{
+                                        opacity: imageLoaded ? "1" : "0",
+                                    }}
+                                  onLoad={() => setImageLoaded(true)}
+                                />
                             )
                             }
+
                             <Navegador>
                                 <button onClick={() => handle('prev')}>
                                     <FiArrowLeft size={18} />
                                 </button>
+                                <a>
+                                    {fotoSelecionada + 1}/{fotos.length}
+                                </a>
                                 <button onClick={() => handle('next')}>
                                     <FiArrowRight size={18} />
                                 </button>

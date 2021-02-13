@@ -171,13 +171,38 @@ export const Carousel = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    div {
+         &:first-child {
+            justify-content: center;
+            display: flex;
+         }
+
+        .c-loader {
+        animation: is-rotating 1s infinite;
+        border: 6px solid #e5e5e5;
+        border-radius: 50%;
+        border-top-color: #51d4db;
+        height: 50px;
+        width: 50px;
+    }
+
+        @keyframes is-rotating {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
     img {
         width: 100%;
+        max-height: 1000px;
         display: flex;
         justify-content: center;
         flex-direction: row;
         border-radius: 8px;
     }
+
+   
+}
 `
 
 export const Page = styled.div`
@@ -231,6 +256,11 @@ export const Navegador = styled.div`
             color: #ffff;
         }
     }
+
+    a {
+        margin-top: 1.2rem;
+
+    }
     
 
     svg {
@@ -279,7 +309,9 @@ export const Acao = styled.div`
             color: #ffff;
             font-weight: bold;
         }
-    }
+    } 
+
+ 
 
     svg {
         margin-right: 5px;
