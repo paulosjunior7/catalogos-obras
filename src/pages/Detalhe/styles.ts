@@ -186,10 +186,26 @@ export const Carousel = styled.div`
         width: 50px;
 
         img {
-            display:flex;
-            flex-direction: row;
-            width: 100%;
-        }
+                /* Set rules to fill background */
+                min-height: 100%;
+                min-width: 1024px;
+                    
+                /* Set up proportionate scaling */
+                width: 100%;
+                height: auto;
+                    
+                /* Set up positioning */
+                position: fixed;
+                top: 0;
+                left: 0;
+                }
+
+                @media screen and (max-width: 1024px) { /* Specific to this particular image */
+                    img {
+                        left: 50%;
+                        margin-left: -512px;   /* 50% */
+                    }
+                }
     }
 
         @keyframes is-rotating {
