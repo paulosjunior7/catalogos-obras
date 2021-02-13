@@ -193,6 +193,8 @@ export const Carousel = styled.div`
     }
 
     img {
+        display:flex;
+        flex-direction: row;
         width: 100%;
     }
 }
