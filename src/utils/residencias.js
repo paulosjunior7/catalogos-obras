@@ -1,3 +1,17 @@
+import planta0512  from '../Assets/planta0512.jpg';
+
+import bancada  from '../Assets/bancada.jpeg';
+import planta1815 from '../Assets/planta1815.jpg';
+
+import COZINHAA  from '../Assets/terrasAlpha/COZINHAA.jpg';
+import COZINHAF2  from '../Assets/terrasAlpha/COZINHAF2.jpg';
+import detalheCozinha  from '../Assets/terrasAlpha/detalheCozinha.jpg';
+import fachada22  from '../Assets/terrasAlpha/fachada22.jpg';
+import piscina9  from '../Assets/terrasAlpha/piscina9.jpg';
+import piscina10  from '../Assets/terrasAlpha/piscina10.jpg';
+import sala4a  from '../Assets/terrasAlpha/sala4a.jpg';
+
+
 export const Casas = [
     {
       id: 1,
@@ -30,13 +44,13 @@ export const Casas = [
       lote: "360 m²",
       fracaolote: "",
       imagens: [
-        "https://docs.google.com/uc?id=1w1iMRYhXIiV7hKVKEfOgkMtyD1zzzOg6",
-        "https://docs.google.com/uc?id=1zJE6oTMgLc3_au8DlN5O_cIwhxXwVQyF",
-        "https://docs.google.com/uc?id=1gLX9Uld4RowDmIbq7sKQUoeP4S-sXBf5",
-        "https://docs.google.com/uc?id=1A2qxun8mWz0WXq_r4dgJlUI4skac3EGB",
-        "https://docs.google.com/uc?id=1jmgbaBbIICmCE6iy63nkizkqAKtt5ZU7",
-        "https://docs.google.com/uc?id=1qXfP_a39BrqFSgVjrDhOcqA-yBWC8kAH",
-        "https://docs.google.com/uc?id=1Dc4_jJb1HnmVkSKWP0hepFTxpv1jP8mi",
+        fachada22  ,
+        COZINHAA  ,
+        COZINHAF2  ,
+        detalheCozinha,
+        piscina9  ,
+        piscina10  ,
+        sala4a
       ]
     },
     {
@@ -64,7 +78,7 @@ export const Casas = [
       lote: "",
       fracaolote: "150m²",
       imagens: [
-        "https://docs.google.com/uc?id=1iQNbo2WA_Gep2tHBoPhoF3q7sb5zKxaX",
+        planta0512
       ]
     },
     {
@@ -92,7 +106,7 @@ export const Casas = [
       lote: "",
       fracaolote: "150m²",
       imagens: [
-        "https://docs.google.com/uc?id=1iQNbo2WA_Gep2tHBoPhoF3q7sb5zKxaX",
+        planta0512
       ]
     },
     {
@@ -122,8 +136,8 @@ export const Casas = [
       lote: "300 m²",
       fracaolote: "",
       imagens: [
-        "https://docs.google.com/uc?id=1gyQNd0g-QoPSarIEGxGJ4GLlNw--hrqz",
-        "https://docs.google.com/uc?id=1hJ5EIV4G8OfeyQIAZCbO39OTu-rpBY5B",
+        bancada,
+        planta1815,
       ]
     }
   ];
