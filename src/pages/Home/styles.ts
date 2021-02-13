@@ -71,6 +71,7 @@ export const Descricao = styled.div`
 `
 
 export const Container = styled.div`
+margin-bottom: 12px;
 
 header {
   background:  linear-gradient(60deg, #236BAB, #359ECB);;
