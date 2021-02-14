@@ -11,6 +11,10 @@ import piscina9  from '../Assets/terrasAlpha/piscina9.jpg';
 import piscina10  from '../Assets/terrasAlpha/piscina10.jpg';
 import sala4a  from '../Assets/terrasAlpha/sala4a.jpg';
 
+import fachada10  from '../Assets/veredas/fachada10.jpg';
+import fachada11  from '../Assets/veredas/fachada11.jpg';
+import lateral  from '../Assets/veredas/lateral.jpeg';
+
 
 export const Casas = [
     {
@@ -136,6 +140,9 @@ export const Casas = [
       lote: "300 m²",
       fracaolote: "",
       imagens: [
+        fachada10,
+        fachada11, 
+        lateral,
         bancada,
         planta1815,
       ]
