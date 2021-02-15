@@ -69,8 +69,9 @@ export const Body = styled.div`
 
 export const Section2 = styled.div`
     width: 100%;
-    max-width: 750px;
+    max-width: 500px;
     display: flex;
+    
     
 `
 
@@ -78,6 +79,12 @@ export const Contato = styled.div`
     display: flex;
     width: 100%;
     margin-bottom: 12px;
+    justify-content: space-between;
+
+    div {
+        width: 100%;
+        display: flex;
+    }
 `
 
 export const Whatsapp = styled(ReactWhatsapp)`
@@ -109,7 +116,7 @@ export const Whatsapp = styled(ReactWhatsapp)`
 export const Section = styled.div`
     line-height: 20px;
     width: 100%;
-    max-width: 750px;
+    max-width: 740px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -165,11 +172,21 @@ export const Section = styled.div`
 `;
 
 export const Carousel = styled.div`
-    max-width: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    
+   // flex-wrap: wrap;
+  width: 100%;
+  max-width: 98rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-row-gap: 1.5rem;
+  
+  @media(max-width: 450px) {
+    grid-column-gap: 4rem;
+  }
+  justify-items: center;
+  
+
 
     div {
          
@@ -197,15 +214,27 @@ export const Carousel = styled.div`
     }
 
 
-    img {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        border-radius: 8px;
-    }
+   
     
 `;
+
+interface Props {
+    img : string;
+}
+export const Imagem = styled.div<Props>`
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url(${(props) => props.img});
+    width: 20.5rem;
+    height: 20.5rem;
+    background-size: cover; 
+    /* img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    } */
+`
 
 export const Page = styled.div`
     display : flex;

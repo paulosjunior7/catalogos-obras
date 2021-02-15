@@ -8,7 +8,10 @@ import { ImWhatsapp } from 'react-icons/im';
 
 //import api from '../../services/api'
 
-import { Container, Section, Content, Carousel, Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp } from './styles';
+import {
+    Container, Section, Content, Carousel,
+    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem
+} from './styles';
 import { Casas } from '../../utils/residencias';
 
 interface Casa {
@@ -127,15 +130,20 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
 
                         <Contato>
-                            <Whatsapp number="5562983002211" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`} >
-                                <ImWhatsapp size={'1.8rem'} />
-                                <a>Eng.Juliana Machado</a>
-                            </Whatsapp>
 
-                            <Whatsapp number="5562992046138" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`}>
-                                <ImWhatsapp size={'1.8rem'} />
-                                <a>Eng.Antônio Carlos</a>
-                            </Whatsapp>
+                            <div>
+                                <Whatsapp number="5562983002211" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`} >
+                                    <ImWhatsapp size={'1.8rem'} />
+                                    <a>Eng.Juliana Machado</a>
+                                </Whatsapp>
+                            </div>
+                            <div>
+                                <Whatsapp number="5562992046138" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`}>
+                                    <ImWhatsapp size={'1.8rem'} />
+                                    <a>Eng.Antônio Carlos</a>
+                                </Whatsapp>
+                            </div>
+
                         </Contato>
 
                     </Section>
@@ -143,7 +151,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                     <Section2>
                         <Carousel>
 
-                            <Navegador>
+                            {/* <Navegador>
                                 <button onClick={() => handle('prev')}>
                                     <FiArrowLeft size={18} />
                                 </button>
@@ -153,33 +161,38 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                 <button onClick={() => handle('next')}>
                                     <FiArrowRight size={18} />
                                 </button>
-                            </Navegador>
+                            </Navegador> */}
 
-
+                            {/* 
                             <div>
                                 {!imageLoaded && (
                                     <div className="c-loader"></div>
                                 )}
-                            </div>
-
+                            </div> */}
 
                             {fotos && (
-                                <img src={fotos[fotoSelecionada]}
-                                    alt="foto"
-                                    loading="lazy"
-                                    style={{
-                                        opacity: imageLoaded ? "1" : "0",
-                                    }}
-                                    onLoad={() => setImageLoaded(true)}
-                                />
+
+                                fotos.map(p =>
+                                    <Imagem img={p} />
+                                    // <img
+                                    //     src={p}
+                                    //     alt="foto"
+                                    //     loading="lazy"
+                                    //     style={{
+                                    //         opacity: imageLoaded ? "1" : "0",
+                                    //     }}
+                                    //     onLoad={() => setImageLoaded(true)}
+                                    // />
+                                )
                             )
                             }
-                            <Acao>
+
+                            {/* <Acao>
                                 <button onClick={() => fileDownloadHandler()}>
                                     <RiDownloadCloud2Line size={'1.8rem'} />
                                     <a>Baixar Imagens</a>
                                 </button>
-                            </Acao>
+                            </Acao> */}
 
                         </Carousel>
                     </Section2>
