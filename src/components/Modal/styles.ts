@@ -8,7 +8,8 @@ export const Background  = styled.div`
     display: flex;
     position: fixed;
     width: 100vw;
-    max-height: 100vh;
+
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 999;
@@ -34,7 +35,6 @@ export const Content = styled.div<Props>`
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
 `
 
 export const CloseModalButton = styled(FiX)`
@@ -54,6 +54,7 @@ export const Head = styled.div`
     justify-content: space-between;
     color: #fff;
     align-items: center;
+    bottom: 0;
 
     button {
         background-color: #236BAB;
