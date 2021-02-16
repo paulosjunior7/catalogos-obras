@@ -359,7 +359,7 @@ export const Acao = styled.div`
 
 
 export const ImagemModal = styled.img`
-max-width: 22vw;
+max-width: 30vw;
 
     @media(max-width: 450px) {
        max-width: 90vw;
