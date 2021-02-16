@@ -11,6 +11,8 @@ import piscina9 from '../Assets/terrasAlpha/piscina9.jpg';
 import piscina10 from '../Assets/terrasAlpha/piscina10.jpg';
 import sala4a from '../Assets/terrasAlpha/sala4a.jpg';
 
+import fachada from '../Assets/terrasAlpha2/fachada.jpg';
+
 import fachada10 from '../Assets/veredas/fachada10.jpg';
 import fachada11 from '../Assets/veredas/fachada11.jpg';
 
@@ -94,6 +96,43 @@ export const Casas = [
   },
   {
     id: 2,
+    endereco: "Alameda Espanha , quadra D1, lote 04",
+    bairro: "Terras Alpha Residencial 1",
+    cidade: "Senador Canedo",
+    valor: "R$ 850.000,00",
+    status: "Em Construção",
+    previsaoConclusao: "Abril/2021",
+    detalhes: [
+      "3 súites sendo 2 plenas e 1 master",
+      "Suíte master com closet",
+      "Banheiro master com lavatório e chuveiro duplo",
+      "Sala com pé direito duplo",
+      "Cozinha",
+      "Varanda Gourmet ampla com bancada em ilha e churrasqueira",
+      "Lavabo",
+      "Área de serviço",
+      "Despensa",
+      "Pisicina com prainha, iluminação e pontos de hidro",
+      " Ducha",
+      "Garagem coberta para dois carros",
+      "Projeto luminotécnico",
+      "Pontos para instalação de ar condicionado",
+      "Aquecimento solar",
+      "Fachada com detalhe em pedra natural"
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "173 m²",
+    lote: "360 m²",
+    fracaolote: "",
+    quartos: 3,
+    banheiros: 4,
+    imagens: [
+      fachada
+    ]
+  },
+  
+  {
+    id: 3,
     endereco: "Alameda Escócia, quadra A1, lote 22",
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
@@ -135,7 +174,7 @@ export const Casas = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
     bairro: "Três Marias",
     cidade: "Goiânia",
@@ -168,7 +207,7 @@ export const Casas = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
@@ -200,7 +239,7 @@ export const Casas = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     endereco: "Rua Vb-21 Quadra 18, Lote 15",
     bairro: "Vereda dos Buritis",
     cidade: "Goiânia",
