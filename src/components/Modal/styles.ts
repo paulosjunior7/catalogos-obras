@@ -7,8 +7,8 @@ export const Background  = styled.div`
     background-color: rgba(0,0,0,0.3);
     display: flex;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: 90vh;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -25,8 +25,6 @@ interface Props {
 }
 
 export const Content = styled.div<Props>`
-    max-width: 90vw;
-    max-height: 2000px;
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;

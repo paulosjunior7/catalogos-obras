@@ -242,6 +242,19 @@ export const Imagem = styled.div<Props>`
     } */
 `
 
+export const ImagemModal = styled.div<Props>`
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url(${(props) => props.img});
+    background-size: cover; 
+    /* img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    } */
+`
+
 export const Page = styled.div`
     display : flex;
     flex-direction : row;
@@ -358,13 +371,13 @@ export const Acao = styled.div`
 `
 
 
-export const ImagemModal = styled.img`
-    width: 30vw;
+// export const ImagemModal = styled.img`
+//     width: 30vw;
 
-    @media(max-width: 450px) {
-       max-width: 350px;
-       width: 100%;
-    }
+//     @media(max-width: 450px) {
+//        max-width: 350px;
+//        width: 100%;
+//     }
 
-    //style={{ maxWidth: '22vw' , @media( maxWidht : '400px') { }}
-`
+//     //style={{ maxWidth: '22vw' , @media( maxWidht : '400px') { }}
+// `

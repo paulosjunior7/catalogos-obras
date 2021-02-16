@@ -177,12 +177,8 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                             </div> */}
 
                             <Modal showModal={showModal} setShowModal={setShowModal}  handleShowModal={handleShowModal} handle={handle} >
-                          
-
-                                <ImagemModal
-                                src={fotos[fotoSelecionada] != undefined ? fotos[fotoSelecionada].value : ''} 
-                                alt="" 
-                                 />
+                               
+                                <ImagemModal img={fotos[fotoSelecionada] != undefined ? fotos[fotoSelecionada].value : ''}/>
                                
                             </Modal>
 
