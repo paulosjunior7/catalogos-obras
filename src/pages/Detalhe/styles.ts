@@ -362,7 +362,8 @@ export const ImagemModal = styled.img`
     width: 30vw;
 
     @media(max-width: 450px) {
-       width: 90vw;
+       max-width: 450px;
+       width: 100%;
     }
 
     //style={{ maxWidth: '22vw' , @media( maxWidht : '400px') { }}
