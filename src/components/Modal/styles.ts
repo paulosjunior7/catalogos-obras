@@ -7,12 +7,11 @@ export const Background  = styled.div`
     background-color: rgba(0,0,0,0.3);
     display: flex;
     position: fixed;
-    width: 100vw;
-
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
    // left: 200px;
    // top: 40px;
     color: black;
@@ -26,13 +25,8 @@ interface Props {
 }
 
 export const Content = styled.div<Props>`
-
-     
-    ${(props) => props.tamanhoReduzido && css `
-        max-width: 750px;
-    `} 
-
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90vw;
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
 `

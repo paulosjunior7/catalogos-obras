@@ -9,11 +9,26 @@ export default createGlobalStyle`
         outline: 0;
         box-sizing: border-box;
     }
+    @supports ( -webkit-touch-callout : none) {
+.selector {
+background-attachment:scroll
+}
+}
+
+@supports not ( -webkit-touch-callout : none) {
+.selector {
+background-attachment: fixed;
+}
+}
 
     html, body {
         height: 100vh;
         font: 62.5% Roboto , sans-serif;
         -webkit-font-smoothing: antialiased;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
     body {
