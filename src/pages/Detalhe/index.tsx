@@ -13,7 +13,7 @@ import { ModalCasa } from '../../modal/modalCasa';
 
 import {
     Container, Section, Content, Carousel,
-    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem
+    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, ImagemModal
 } from './styles';
 
 import { Casas } from '../../utils/residencias';
@@ -179,10 +179,10 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                             <Modal showModal={showModal} setShowModal={setShowModal}  handleShowModal={handleShowModal} handle={handle} >
                           
 
-                                <img 
+                                <ImagemModal
                                 src={fotos[fotoSelecionada] != undefined ? fotos[fotoSelecionada].value : ''} 
                                 alt="" 
-                                style={{ maxWidth: '98vw' , maxHeight: '90vh' }} />
+                                 />
                                
                             </Modal>
 

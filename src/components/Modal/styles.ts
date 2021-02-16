@@ -25,7 +25,6 @@ interface Props {
 }
 
 export const Content = styled.div<Props>`
-    background-color: #ccc;
 
      
     ${(props) => props.tamanhoReduzido && css `
@@ -35,6 +34,7 @@ export const Content = styled.div<Props>`
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    max-width: 90vw;
 `
 
 export const CloseModalButton = styled(FiX)`
@@ -48,24 +48,22 @@ export const CloseModalButton = styled(FiX)`
 `;
 
 export const Head = styled.div`
-    background-color: #fff;
+    background-color: transparent;
     height: 44px;
     display: flex;
     justify-content: space-between;
     color: #fff;
     align-items: center;
-    padding: 0 8px 0 8px;
 
     button {
         background-color: #236BAB;
         color: #fff;
         height: 35px;
-        width: 200px;
         width: 100%;
+        margin-right: 3px;
         align-items: center;
         display: flex;
         justify-content: center;
-        margin-left: 8px;
         border-radius: 4px;
         border: 0;
         font-weight: bold;
