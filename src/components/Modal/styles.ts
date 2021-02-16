@@ -26,6 +26,7 @@ interface Props {
 
 export const Content = styled.div<Props>`
     max-width: 90vw;
+    max-height: 2000px;
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
