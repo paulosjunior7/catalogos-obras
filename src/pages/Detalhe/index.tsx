@@ -41,24 +41,24 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
     const [showModal, setShowModal] = useState<boolean>(false);
 
-    // useEffect(() => {
-    //     fotos.forEach((image) => {
-    //         new Image().src = image
-    //     });
-    // })
+    useEffect(() => {
+        fotos.forEach((image) => {
+            new Image().src = image.value
+        });
+    })
 
     useEffect(() => {
 
         async function Pesquisar() {
             const detalhe = Casas.find(p => p.id === Number(match.params.id));
-           
+
             setDetalheCasa(detalhe);
 
-            const qt =  detalhe?.imagens.length!;
+            const qt = detalhe?.imagens.length!;
 
             const fots = [];
-            for (let index = 0; index < qt ; index++) {
-                const value = { value: detalhe?.imagens[index]! , key: index };
+            for (let index = 0; index < qt; index++) {
+                const value = { value: detalhe?.imagens[index]!, key: index };
                 fots.push(value);
             }
             setFotos(fots);
@@ -104,7 +104,6 @@ const Detalhe: React.FC<Props> = ({ match }) => {
         setShowModal(value);
     }
 
-    // src image and trace image url
     return (
         <Container>
             <BackgroudImage />
@@ -176,20 +175,17 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                 )}
                             </div> */}
 
-                            <Modal showModal={showModal} setShowModal={setShowModal}  handleShowModal={handleShowModal} handle={handle} >
-                               
-                                <ImagemModal img={fotos[fotoSelecionada] != undefined ? fotos[fotoSelecionada].value : ''}/>
-                               
-                            </Modal>
-
                             {fotos && (
-
-                                fotos.map((p: PropsFotos)=>
-                                  <Imagem img={p.value} onClick={() => {setFotoSelecionada(p.key); handleShowModal(true)}  }/>
-                                  ))
-                                }
-                                
-                                    {/* <img
+                                fotos.map((p: PropsFotos) =>
+                                    <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal(true) }} />
+                                ))
+                            }
+                            {/* {fotos && (
+                                <Modal showModal={showModal} setShowModal={setShowModal} handleShowModal={handleShowModal} handle={handle} >
+                                    <ImagemModal img={fotos[fotoSelecionada].value} />
+                                </Modal>
+                            )} */}
+                            {/* <img
                                     //     src={p}
                                     //     alt="foto"
                                     //     loading="lazy"

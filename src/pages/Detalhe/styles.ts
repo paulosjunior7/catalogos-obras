@@ -186,9 +186,11 @@ export const Carousel = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(10rem, 1fr));
   grid-row-gap: 1.5rem;
+
   
   @media(max-width: 450px) {
     grid-column-gap: 4rem;
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
   }
   justify-items: center;
   
@@ -225,7 +227,7 @@ export const Carousel = styled.div`
 `;
 
 interface Props {
-    img : string;
+    img? : string;
 }
 export const Imagem = styled.div<Props>`
     border: 1px solid #ccc;
@@ -234,6 +236,12 @@ export const Imagem = styled.div<Props>`
     background-image: url(${(props) => props.img});
     width: 20.5rem;
     height: 20.5rem;
+
+      
+    @media(max-width: 450px) {
+            width: 44.5rem;
+        height: 44.5rem;
+    }
     background-size: cover; 
     /* img {
         width: 100%;
@@ -248,6 +256,7 @@ export const ImagemModal = styled.div<Props>`
     cursor: pointer;
     background-image: url(${(props) => props.img});
     background-size: cover; 
+    width: 90%;
     /* img {
         width: 100%;
         overflow: hidden;
