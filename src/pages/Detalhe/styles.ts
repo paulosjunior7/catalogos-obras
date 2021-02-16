@@ -6,7 +6,7 @@ import ReactWhatsapp from 'react-whatsapp';
 
 export const Container = styled.div`
     width: 100vw;
-    margin: 0 auto;
+    margin: 0   ;
     display: flex;
     justify-content: center;
     /* background-image: url("https://wallpaperaccess.com/full/773716.jpg");
@@ -58,8 +58,9 @@ export const Header = styled.div`
 export const Body = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
     
     @media(max-width: 845px) {
         flex-direction: column;
@@ -71,7 +72,7 @@ export const Section2 = styled.div`
     width: 100%;
     max-width: 500px;
     display: flex;
-    
+    padding-top: 32px;
     
 `
 
@@ -120,6 +121,7 @@ export const Section = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 8px;
 
     h2 {
         //margin: 49px 0 22px;

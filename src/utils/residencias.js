@@ -13,7 +13,6 @@ import sala4a  from '../Assets/terrasAlpha/sala4a.jpg';
 
 import fachada10  from '../Assets/veredas/fachada10.jpg';
 import fachada11  from '../Assets/veredas/fachada11.jpg';
-import lateral  from '../Assets/veredas/lateral.jpeg';
 
 import muro  from '../Assets/veredas/muro.jpg';
 import muro2  from '../Assets/veredas/muro2.jpg';
@@ -148,7 +147,6 @@ export const Casas = [
         fachada11, 
         muro, 
         muro2,
-        lateral,
         bancada,
         planta1815,
       ]

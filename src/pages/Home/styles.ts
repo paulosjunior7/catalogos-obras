@@ -35,8 +35,21 @@ export const Filter = styled.div`
 `
 
 export const Descricao = styled.div`
-  padding: 10px;
-  color: #ecf0f1;
+  padding: 0px 10px;
+  color: #333;
+
+  div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+
+      svg { 
+        color : #4CB8AC;
+        margin-right: 3px;
+      }
+    }
+    
   
   p {
 
@@ -44,34 +57,22 @@ export const Descricao = styled.div`
       font-size: 1.8rem;
     }
 
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
 
     @media (max-width: 474px) {
       font-size: 1.9rem;
     }
   }
   
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;  
-    p {
-      &:last-child {
-        margin-left: auto;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background-color: #236BAB;
-        border: 0.5px solid #ccc;
-        color: #fff;
-        filter: brightness(90%);
-      }
-    }
-  }
+  
 `
 
 export const Container = styled.div`
 margin-bottom: 12px;
+background-color: #fbfbfb;
+height: 100vh;
+
 
 header {
   background:  linear-gradient(60deg, #236BAB, #359ECB);;
@@ -122,6 +123,7 @@ header nav ul li a {
   font-size: 1.4rem; 
   padding: 2.4rem;
   transition: all 250ms linear 0s;
+
 }
 
 header nav ul li a:hover {
@@ -149,7 +151,6 @@ h3 {
   margin: 15px 0px 0px;
   padding: 12px 30px;
   text-decoration: none;
-  border-radius: 5px;
   transition: all 150ms linear 0s;
 }
 
@@ -163,6 +164,7 @@ HERO
 ==================*/
 section.hero {
   margin: 12px 0;
+
 }
 
 section.hero .container {
@@ -178,6 +180,7 @@ section.hero p {
   color: rgb(154, 142, 191);
   font-size: 1.8rem;
   line-height: 3.2rem;
+
 }
 
 
@@ -202,22 +205,25 @@ CARDS
 }
 
 .text--medium {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 
   @media (max-width: 474px) {
     font-size: 1.9rem;
   }
   font-weight: 400;
-  color: #ecf0f1;
+  color: #333;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #236BAB;
+  justify-content: space-between;
+  background-color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 
 }
 
@@ -231,6 +237,10 @@ CARDS
 
   overflow: hidden;
   position: relative;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+
 }
 
 .image img {
@@ -246,7 +256,7 @@ CARDS
 }
 
 .title {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 }
 
 .info {
@@ -257,10 +267,8 @@ CARDS
 
 .price {
   margin-left: auto;
-  padding: 5px 20px;
-  border-radius: 10px;
   background-color: #236BAB;
-  color: #fff;
+  color: #333;
   filter: brightness(90%);
 }
 
@@ -291,7 +299,7 @@ MODAL
   justify-content: center;
   position: relative;
   
-  background-color: #fff;
+  background-color: #333;
   
   width: 95%;
   height: 95%;
@@ -423,5 +431,33 @@ FORM
   margin: 10px 8px 10px;
 }
 
+`
 
+export const Footer = styled.div`
+  height: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+
+      svg { 
+        color : #4CB8AC;
+        margin-right: 3px;
+      }
+
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    p {
+      &:last-child {
+        color: #333;
+      }
+    }
+  } 
 `
