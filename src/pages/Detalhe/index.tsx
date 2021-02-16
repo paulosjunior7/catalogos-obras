@@ -5,6 +5,9 @@ import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
 import { ImWhatsapp } from 'react-icons/im';
 
+import Modal from '../../components/Modal';
+import { ModalCasa } from '../../modal/modalCasa';
+
 
 //import api from '../../services/api'
 
@@ -12,28 +15,16 @@ import {
     Container, Section, Content, Carousel,
     Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem
 } from './styles';
+
 import { Casas } from '../../utils/residencias';
-
-interface Casa {
-    id: number;
-    endereco: string;
-    bairro: string;
-    cidade: string;
-    valor: string;
-    status: string;
-    previsaoConclusao: string;
-    detalhes: string[];
-    condicoes: string;
-    areaConstruida: string;
-    lote: string;
-    fracaolote: string;
-    imagens: string[];
-}
-
-
 
 interface Props {
     match: any;
+}
+
+interface PropsFotos {
+    key: number;
+    value: string;
 }
 
 const Detalhe: React.FC<Props> = ({ match }) => {
@@ -41,43 +32,54 @@ const Detalhe: React.FC<Props> = ({ match }) => {
     const [description, setDescription] = useState('')
     const [value, setValue] = useState('');
 
-    const [fotos, setFotos] = useState<string[]>([]);
+    const [fotos, setFotos] = useState<PropsFotos[]>([]);
     const [fotoSelecionada, setFotoSelecionada] = useState<number>(0);
 
     const history = useHistory()
 
-    const [detalheCasa, setDetalheCasa] = useState<Casa>();
+    const [detalheCasa, setDetalheCasa] = useState<ModalCasa>();
 
-    useEffect(() => {
-        fotos.forEach((image) => {
-            new Image().src = image
-        });
-    })
+    const [showModal, setShowModal] = useState<boolean>(false);
+
+    // useEffect(() => {
+    //     fotos.forEach((image) => {
+    //         new Image().src = image
+    //     });
+    // })
 
     useEffect(() => {
 
         async function Pesquisar() {
             const detalhe = Casas.find(p => p.id === Number(match.params.id));
+           
             setDetalheCasa(detalhe);
-            setFotos(detalhe?.imagens!);
+
+            const qt =  detalhe?.imagens.length!;
+
+            const fots = [];
+            for (let index = 0; index < qt ; index++) {
+                const value = { value: detalhe?.imagens[index]! , key: index };
+                fots.push(value);
+            }
+            setFotos(fots);
         }
 
         Pesquisar()
 
     }, [match.params.id])
 
-    const fileDownloadHandler = async () => {
-        for (var i = 0; i < fotos.length; i++) {
-            const response = await fetch(fotos[i]);
-            response.blob().then(blob => {
-                let url = window.URL.createObjectURL(blob);
-                let a = document.createElement('a');
-                a.href = url;
-                a.download = 'picture.jpeg';
-                a.click();
-            });
-        }
-    }
+    // const fileDownloadHandler = async () => {
+    //     for (var i = 0; i < fotos.length; i++) {
+    //         const response = await fetch(fotos[i]);
+    //         response.blob().then(blob => {
+    //             let url = window.URL.createObjectURL(blob);
+    //             let a = document.createElement('a');
+    //             a.href = url;
+    //             a.download = 'picture.jpeg';
+    //             a.click();
+    //         });
+    //     }
+    // }
 
     function handle(a: string) {
         if (a === 'next') {
@@ -93,10 +95,14 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                 setFotoSelecionada(fotoSelecionada - 1)
             }
         }
+
     }
 
-
     const [imageLoaded, setImageLoaded] = useState(false);
+
+    function handleShowModal(value: boolean) {
+        setShowModal(value);
+    }
 
     // src image and trace image url
     return (
@@ -115,7 +121,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <p> Cidade: <a>{detalheCasa?.cidade}</a> </p>
                         {detalheCasa?.fracaolote != "" && <p> Fração do Lote: <a>{detalheCasa?.fracaolote} </a></p>}
                         <p> Área Construida: <a>{detalheCasa?.areaConstruida} </a></p>
-                        <p> Lote: <a>{detalheCasa?.lote}</a> </p>
+                        {detalheCasa?.lote != "" && <p> Lote: <a>{detalheCasa?.lote}</a> </p>}
                         <p> Condições: <a>{detalheCasa?.condicoes} </a></p>
                         <p> Status: <a>{detalheCasa?.status} </a></p>
                         <p> Previsão de Conclusão: <a>{detalheCasa?.previsaoConclusao} </a></p>
@@ -170,11 +176,24 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                 )}
                             </div> */}
 
+                            <Modal showModal={showModal} setShowModal={setShowModal}  handleShowModal={handleShowModal} handle={handle} >
+                          
+
+                                <img 
+                                src={fotos[fotoSelecionada] != undefined ? fotos[fotoSelecionada].value : ''} 
+                                alt="" 
+                                style={{ maxWidth: '98vw' , maxHeight: '90vh' }} />
+                               
+                            </Modal>
+
                             {fotos && (
 
-                                fotos.map(p =>
-                                    <Imagem img={p} />
-                                    // <img
+                                fotos.map((p: PropsFotos)=>
+                                  <Imagem img={p.value} onClick={() => {setFotoSelecionada(p.key); handleShowModal(true)}  }/>
+                                  ))
+                                }
+                                
+                                    {/* <img
                                     //     src={p}
                                     //     alt="foto"
                                     //     loading="lazy"
@@ -182,10 +201,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                     //         opacity: imageLoaded ? "1" : "0",
                                     //     }}
                                     //     onLoad={() => setImageLoaded(true)}
-                                    // />
-                                )
-                            )
-                            }
+                                    // /> */}
 
                             {/* <Acao>
                                 <button onClick={() => fileDownloadHandler()}>

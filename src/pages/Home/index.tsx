@@ -3,31 +3,18 @@ import Header from '../../components/Header'
 import { Casas } from '../../utils/residencias'
 
 import { Link, useHistory } from 'react-router-dom'
-import { Container, Descricao, Filter, MenuBar, Footer } from './styles'
+import { Container, Descricao, Filter, MenuBar, Footer , Status} from './styles'
 
 import { ImPriceTags } from 'react-icons/im';
-import { BiArea  } from 'react-icons/bi';
+import { BiArea } from 'react-icons/bi';
 import { IoMdTime } from 'react-icons/io';
 import { IoLocationOutline } from 'react-icons/io5';
 import { BiPurchaseTagAlt } from 'react-icons/bi';
 import { GrInfo } from 'react-icons/gr';
 import { BiCalendar } from 'react-icons/bi';
+import { FaShower, FaBed } from 'react-icons/fa';
 
-interface CasasModal {
-  id: number;
-  endereco: string;
-  bairro: string;
-  cidade: string;
-  valor: string;
-  status: string;
-  previsaoConclusao: string;
-  detalhes: string[];
-  condicoes: string;
-  areaConstruida: string;
-  lote: string;
-  fracaolote: string;
-  imagens: string[];
-}
+import { ModalCasa } from '../../modal/modalCasa'
 
 
 const Home = () => {
@@ -39,8 +26,7 @@ const Home = () => {
     history.push(`/detalhe/${id}`);
   }
 
-
-  const filteredValues = Casas.filter((casas: CasasModal) => {
+  const filteredValues = Casas.filter((casas: ModalCasa) => {
     return casas.status.toLowerCase().includes(pesquisaStatus.toLowerCase()) && casas.bairro.toLowerCase().includes(pesquisaBairro.toLowerCase())
   });
 
@@ -65,7 +51,7 @@ const Home = () => {
               <option value="" disabled selected>Pesquisar status</option>
               <option value="">Todas</option>
               {
-                Casas.map((ca: CasasModal) => {
+                Casas.map((ca: ModalCasa) => {
                   <option key={ca.id} value={ca.status}>{ca.status}</option>
                 }
                 )
@@ -94,37 +80,51 @@ const Home = () => {
                 </div>
 
                 <Descricao>
-                  <p>{p.bairro}</p>
+                  <span>
+                    <div>
+                     <p>{p.valor}</p> 
+                    </div>
+
+                    <Status className={ p.status == 'Concluída' ? 'concluida' : 'emConstrucao'}>
+                      <a className={ p.status == 'Concluída' ? 'concluida' : 'emConstrucao'} >{p.status}</a>
+                    </Status>
+                  </span>
+
+
+                  <p className="bairro">{p.bairro}</p>
 
                   <div>
                     <IoLocationOutline size={20} />
-                      <p>{p.endereco}</p>
-                    </div>
-
-                  <div>
-
-                    <BiArea size={18} />
-                    <p>{p.areaConstruida}</p>
+                    <p>{p.endereco}</p>
                   </div>
+
+
                   <div>
                     <BiCalendar size={18} />
                     <p>{p.previsaoConclusao}</p>
                   </div>
 
-                  <div>
-                    <BiPurchaseTagAlt size={18} /> 
-                    {p.valor}
-                  </div>
-
-                  <div>
-                    <IoMdTime size={18} /> 
-                    <p>{p.status}</p>
-                  </div>
 
                 </Descricao>
 
                 <Footer>
-                
+                  <div>
+                    <BiArea size={18} />
+                    <p>{p.areaConstruida}</p>
+                  </div>
+
+                  <span>
+                    <div>
+
+                      <FaShower size={16} />
+                      <p>{p.banheiros}</p>
+                    </div>
+                    <div>
+
+                      <FaBed size={18} />
+                      <p>{p.quartos}</p>
+                    </div>
+                  </span>
                 </Footer>
 
               </div>

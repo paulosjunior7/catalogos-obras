@@ -34,16 +34,86 @@ export const Filter = styled.div`
   }
 `
 
+export const Status = styled.div`
+
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  .emConstrucao {
+    background-color: #fff2dc;
+  color: #F7B649;
+  }
+
+  .concluida {
+    background-color: #b4ecb4;
+    color:  #3ace3a;
+  }
+
+ 
+
+  @media (max-width: 474px) {
+    max-width: 30rem;
+  }
+  
+  a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    
+
+    .emConstrucao {
+      a {
+
+      color: #F7B649;
+      }
+    }
+
+    .concluida {
+      color:  #3ace3a;
+    }
+    
+    align-items: center;
+  justify-content: flex-end;
+  border-radius: 4px; 
+    height: 22px;
+  padding: 4px;
+  max-width: 150px;
+  display: flex;
+
+    @media (max-width: 474px) {
+      font-size: 1.7rem;
+    }
+  }
+`
+
 export const Descricao = styled.div`
-  padding: 0px 10px;
+  padding: 10px 10px;
   color: #333;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  span {
+    display: flex;
+    width: 100%;
+
+    div {
+    p {
+      color: #4DB8AC;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+  }
 
   div {
+
       display: flex;
       flex-direction: row;
-      width: 100%;
       align-items: center;
-
+      width: 100%;
+      p {
+        width: 100%;
+      }
       svg { 
         color : #4CB8AC;
         margin-right: 3px;
@@ -51,14 +121,15 @@ export const Descricao = styled.div`
     }
     
   
+    .bairro {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
   p {
 
-    &:first-child {
-      font-size: 1.8rem;
-    }
 
     font-size: 1.4rem;
-    line-height: 2.3rem;
+    line-height: 2.8rem;
 
     @media (max-width: 474px) {
       font-size: 1.9rem;
@@ -70,7 +141,7 @@ export const Descricao = styled.div`
 
 export const Container = styled.div`
 margin-bottom: 12px;
-background-color: #fbfbfb;
+background-color: #F4F4F4;
 height: 100vh;
 
 
@@ -200,7 +271,7 @@ CARDS
   margin: auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 20px;
 }
 
@@ -218,12 +289,13 @@ CARDS
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  width: 100%;
+  justify-content: space-between;
 
 }
 
@@ -415,7 +487,6 @@ FORM
 .form-group label.right-inline {
   text-align: right;  
   padding-right: 8px;
-  padding-left: 10px;
   width: auto;
 }
 
@@ -434,10 +505,35 @@ FORM
 `
 
 export const Footer = styled.div`
-  height: 25px;
+  max-height: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   width: 100%;
+  border-top: 1px solid #F4F4F4;
+  padding-left: 10px;
+  padding-right: 12px;
+
+  span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 20rem;
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    
+      p {
+      }
+    svg { 
+        color : #4CB8AC;
+        margin-right: 8px;
+      }
+    }
+
+  }
 
   div {
       display: flex;
@@ -453,7 +549,6 @@ export const Footer = styled.div`
     width: 100%;
     align-items: center;
     display: flex;
-    justify-content: space-between;
     p {
       &:last-child {
         color: #333;
