@@ -178,7 +178,7 @@ export const Casas = [
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 360.000,00",
+    valor: "R$ 340.000,00",
     status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
@@ -211,7 +211,7 @@ export const Casas = [
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 360.000,00",
+    valor: "R$ 340.000,00",
     status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
