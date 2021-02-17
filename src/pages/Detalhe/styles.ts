@@ -259,7 +259,7 @@ export const ImagemModal = styled.img<Props>`
         position: relative;
     } */
     img {
-            width:60vw;
+            width:60 vw;
         }
 
     @media(max-width: 450px) {
