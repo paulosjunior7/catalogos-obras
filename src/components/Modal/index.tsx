@@ -43,7 +43,7 @@ const Modal: React.FC<PropsModal> = ({ titulo,handle , showModal, setShowModal, 
         <>
             { showModal ? (
                 <Background >
-                        <Content tamanhoReduzido={tamanhoReduzido}>
+                        <Content>
                             <Body>
                                 {children}
                             </Body>

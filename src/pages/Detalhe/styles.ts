@@ -22,16 +22,17 @@ export const BackgroudImage = styled.div`
     height: 40vh;
     width: 100vw;
     position: fixed;
+    display: none;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: -0;
     /* border-radius: 0 0 85% 85% / 10%; */
 
 `
 
 export const Content = styled.div`
     margin-top: 1vw;
-    z-index: 9999;
+    z-index: 0;
     width: 100%;
     max-width: 1000px;
     background: #FFFFFF;
@@ -190,7 +191,7 @@ export const Carousel = styled.div`
   
   @media(max-width: 450px) {
     grid-column-gap: 4rem;
-    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
   }
   justify-items: center;
   
@@ -236,12 +237,6 @@ export const Imagem = styled.div<Props>`
     background-image: url(${(props) => props.img});
     width: 20.5rem;
     height: 20.5rem;
-
-      
-    @media(max-width: 450px) {
-            width: 44.5rem;
-        height: 44.5rem;
-    }
     background-size: cover; 
     /* img {
         width: 100%;
@@ -250,18 +245,75 @@ export const Imagem = styled.div<Props>`
     } */
 `
 
-export const ImagemModal = styled.div<Props>`
+export const ImagemModal = styled.img<Props>`
     border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
     background-image: url(${(props) => props.img});
-    background-size: cover; 
-    width: 90%;
+    width: 100%;
+    height: 100%;
+  
     /* img {
         width: 100%;
         overflow: hidden;
         position: relative;
     } */
+    img {
+            width:60vw;
+        }
+
+    @media(max-width: 450px) {
+        img {
+            width: 90vw;
+        }
+    }
+  
+`
+
+export const Head = styled.div`
+    background-color: transparent;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    bottom: 0;
+
+    button {
+        background-color: #236BAB;
+        color: #fff;
+        height: 35px;
+        width: 100%;
+        margin-right: 3px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:last-child {
+            background-color: #ff6961;
+            color: #fff;
+        }
+        
+    }
+    
+    a {
+        font-weight: 500;
+        font-size: 2.0rem;
+        color: #ccc;
+    }
+    
+    svg {
+        cursor: pointer;
+        color: #359ECB;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+   
 `
 
 export const Page = styled.div`

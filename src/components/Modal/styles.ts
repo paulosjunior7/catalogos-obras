@@ -6,32 +6,16 @@ import { FiX } from 'react-icons/fi';
 export const Background  = styled.div`
     background-color: rgba(0,0,0,0.3);
     display: flex;
-    position: fixed;
-    width: 100% ;
-    height: 100%;
     top: 0;
     left: 0;
     z-index: 9999;
-   // left: 200px;
-   // top: 40px;
-    color: black;
     justify-content: center;
     align-items: center;
-
-  
-  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-
 `
 
-interface Props {
-    tamanhoReduzido: boolean;
-}
-
-export const Content = styled.div<Props>`
-        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+export const Content = styled.div`
     display: flex;
     flex-direction: column;
-    width: 60vw;
 `
 
 export const CloseModalButton = styled(FiX)`

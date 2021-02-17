@@ -5,15 +5,17 @@ import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
 import { ImWhatsapp } from 'react-icons/im';
 
-import Modal from '../../components/Modal';
 import { ModalCasa } from '../../modal/modalCasa';
+
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 
 //import api from '../../services/api'
 
 import {
     Container, Section, Content, Carousel,
-    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, ImagemModal
+    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, Head , ImagemModal
 } from './styles';
 
 import { Casas } from '../../utils/residencias';
@@ -68,19 +70,6 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
     }, [match.params.id])
 
-    // const fileDownloadHandler = async () => {
-    //     for (var i = 0; i < fotos.length; i++) {
-    //         const response = await fetch(fotos[i]);
-    //         response.blob().then(blob => {
-    //             let url = window.URL.createObjectURL(blob);
-    //             let a = document.createElement('a');
-    //             a.href = url;
-    //             a.download = 'picture.jpeg';
-    //             a.click();
-    //         });
-    //     }
-    // }
-
     function handle(a: string) {
         if (a === 'next') {
             if (fotoSelecionada === fotos.length - 1) {
@@ -95,20 +84,27 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                 setFotoSelecionada(fotoSelecionada - 1)
             }
         }
-
     }
 
     const [imageLoaded, setImageLoaded] = useState(false);
 
-    function handleShowModal(value: boolean) {
-        setShowModal(value);
+    function handleShowModal() {
+        setShowModal(!showModal);
     }
+
+
+    const bg = {
+        closeIcon: {
+            background: "#fff"
+        },
+
+    };
 
     return (
         <Container>
             <BackgroudImage />
             <Content>
-                <Header>
+                <Header style={{}}>
                     <FiX size={28} onClick={() => history.push('/')} />
                 </Header>
                 <Body>
@@ -133,9 +129,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                             }
                         </ul>
                         <p> <h2>Valor : {detalheCasa?.valor} </h2> </p>
-
                         <Contato>
-
                             <div>
                                 <Whatsapp number="5562983002211" message={`Olá, Gostaria de mais informações das casas disponiveis para venda`} >
                                     <ImWhatsapp size={'1.8rem'} />
@@ -148,66 +142,41 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                     <a>Eng.Antônio Carlos</a>
                                 </Whatsapp>
                             </div>
-
                         </Contato>
-
                     </Section>
-
                     <Section2>
                         <Carousel>
-
-                            {/* <Navegador>
-                                <button onClick={() => handle('prev')}>
-                                    <FiArrowLeft size={18} />
-                                </button>
-                                <a>
-                                    {fotoSelecionada + 1}/{fotos.length}
-                                </a>
-                                <button onClick={() => handle('next')}>
-                                    <FiArrowRight size={18} />
-                                </button>
-                            </Navegador> */}
-
-                            {/* 
-                            <div>
-                                {!imageLoaded && (
-                                    <div className="c-loader"></div>
-                                )}
-                            </div> */}
-
                             {fotos && (
                                 fotos.map((p: PropsFotos) =>
-                                    <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal(true) }} />
+                                    <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal() }} />
                                 ))
                             }
-                            {/* {fotos && (
-                                <Modal showModal={showModal} setShowModal={setShowModal} handleShowModal={handleShowModal} handle={handle} >
-                                    <ImagemModal img={fotos[fotoSelecionada].value} />
-                                </Modal>
-                            )} */}
-                            {/* <img
-                                    //     src={p}
-                                    //     alt="foto"
-                                    //     loading="lazy"
-                                    //     style={{
-                                    //         opacity: imageLoaded ? "1" : "0",
-                                    //     }}
-                                    //     onLoad={() => setImageLoaded(true)}
-                                    // /> */}
 
-                            {/* <Acao>
-                                <button onClick={() => fileDownloadHandler()}>
-                                    <RiDownloadCloud2Line size={'1.8rem'} />
-                                    <a>Baixar Imagens</a>
+
+                            <Modal open={showModal} center={true} onClose={handleShowModal} showCloseIcon={false} >
+                                {
+                                    fotos.length > 0 && (
+                                        <ImagemModal
+                                            src={fotos[fotoSelecionada].value} />)
+                                        
+                                }
+                                <Head>
+                                    <button onClick={() => { handle('back') }}>
+                                        <FiArrowLeft size={'2.0rem'} /> Anterior
                                 </button>
-                            </Acao> */}
+                                    <button onClick={() => { handle('next') }}>
+                                        Proxima
+                                    <FiArrowRight size={'2.0rem'} />
+                                    </button>
+                                    <button onClick={() => { handleShowModal() }}>Fechar</button>
+
+                                </Head>
+                            </Modal>
 
                         </Carousel>
                     </Section2>
-
                 </Body>
             </Content>
-
         </Container>
     )
 }
