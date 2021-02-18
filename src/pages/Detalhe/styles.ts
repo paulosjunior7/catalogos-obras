@@ -199,10 +199,7 @@ export const Carousel = styled.div`
 
     div {
          
-            &:first-child {
-            justify-content: center;
-            display: flex;
-         }
+       
 
         .c-loader {
         animation: is-rotating 1s infinite;
@@ -243,6 +240,15 @@ export const Imagem = styled.div<Props>`
         overflow: hidden;
         position: relative;
     } */
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem;
+
+    svg {
+        color: #FFFF;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
 `
 
 export const ImagemModal = styled.img<Props>`

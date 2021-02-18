@@ -4,6 +4,7 @@ import { Link, useHistory, match } from 'react-router-dom'
 import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
 import { ImWhatsapp } from 'react-icons/im';
+import { CgMaximizeAlt } from 'react-icons/cg';
 
 import { ModalCasa } from '../../modal/modalCasa';
 
@@ -148,7 +149,9 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <Carousel>
                             {fotos && (
                                 fotos.map((p: PropsFotos) =>
-                                    <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal() }} />
+                                    <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal() }} >
+                                        <CgMaximizeAlt size={'3.0rem'} />
+                                    </Imagem>
                                 ))
                             }
 
