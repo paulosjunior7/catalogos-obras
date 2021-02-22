@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 import { Casas } from '../../utils/residencias'
 
 import { Link, useHistory } from 'react-router-dom'
-import { Container, Descricao, Filter, MenuBar, Footer , Status} from './styles'
+import { Container, Descricao, Filter, MenuBar, Footer , Status,Rodape} from './styles'
 
 import { ImPriceTags } from 'react-icons/im';
 import { BiArea } from 'react-icons/bi';
@@ -133,6 +133,10 @@ const Home = () => {
 
         </section>
       </main>
+      <Rodape>
+
+      </Rodape>
+
     </ Container>
   )
 }

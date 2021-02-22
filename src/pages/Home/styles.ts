@@ -142,8 +142,6 @@ export const Descricao = styled.div`
 export const Container = styled.div`
 margin-bottom: 12px;
 background-color: #F4F4F4;
-height: 100vh;
-
 
 header {
   background:  linear-gradient(60deg, #236BAB, #359ECB);;
@@ -297,6 +295,7 @@ CARDS
   width: 100%;
   justify-content: space-between;
 
+  
 }
 
 .card:hover {
@@ -502,6 +501,13 @@ FORM
   margin: 10px 8px 10px;
 }
 
+`;
+
+export const Rodape = styled.div`
+  margin-top: 4px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
 `
 
 export const Footer = styled.div`

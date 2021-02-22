@@ -16,7 +16,7 @@ import { Modal } from "react-responsive-modal";
 
 import {
     Container, Section, Content, Carousel,
-    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, Head , ImagemModal
+    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, Head , ImagemModal 
 } from './styles';
 
 import { Casas } from '../../utils/residencias';

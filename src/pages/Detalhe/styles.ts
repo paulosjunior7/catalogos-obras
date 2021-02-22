@@ -5,7 +5,6 @@ import ReactWhatsapp from 'react-whatsapp';
 
 
 export const Container = styled.div`
-    width: 99vw;
     height: auto;
     margin: 0   ;
     display: flex;
@@ -17,26 +16,30 @@ export const Container = styled.div`
     
 `;
 
+
+
 export const BackgroudImage = styled.div`
     background-image: linear-gradient( 135deg, #359ECB 10%, #359ECB 100%);
     height: 40vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
-    display: none;
+    display: flex;
     left: 0;
     top: 0;
-    z-index: -0;
+    z-index: 1;
     /* border-radius: 0 0 85% 85% / 10%; */
 
 `
 
 export const Content = styled.div`
     margin-top: 1vw;
-    z-index: 0;
-    width: 100%;
+    width: 99%;
     max-width: 1000px;
-    background: #FFFFFF;
+    background: #FAFBFC;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    margin-bottom: 2vw;
+    border-radius: 8px;
 `
 
 export const Header = styled.div`
@@ -46,7 +49,8 @@ export const Header = styled.div`
     background-color: #236BAB;
     left: 0;
     top: 0;
-
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     justify-content : flex-end;
     align-items: center;
     padding-right: 12px;
