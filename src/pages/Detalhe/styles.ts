@@ -55,6 +55,7 @@ export const Header = styled.div`
     align-items: center;
     padding-right: 12px;
 
+
     svg {
         color: #FFFFFF;
         cursor: pointer;
@@ -289,6 +290,24 @@ export const Head = styled.div`
     align-items: center;
     bottom: 0;
 
+    a {
+        background-color: #3ace84;
+        color: #fff;
+        height: 35px;
+        width: 100%;
+        margin-right: 3px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        border: 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    
+
     button {
         background-color: #236BAB;
         color: #fff;
@@ -312,15 +331,24 @@ export const Head = styled.div`
     
     a {
         font-weight: 500;
-        font-size: 2.0rem;
-        color: #ccc;
+        font-size: 1.5rem;
+        color: #fff;
+   
+       text-decoration: none;
+
+       link {
+           font-size: 12px;
+       }
     }
-    
+   
+  
     svg {
         cursor: pointer;
-        color: #359ECB;
+        color: #fff;
         margin-right: 1rem;
         margin-left: 1rem;
+
+      
     }
 
    

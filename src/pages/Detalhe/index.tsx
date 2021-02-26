@@ -5,6 +5,7 @@ import { FiArrowLeft, FiArrowRight, FiX } from 'react-icons/fi';
 import { RiDownloadCloud2Line } from 'react-icons/ri';
 import { ImWhatsapp } from 'react-icons/im';
 import { CgMaximizeAlt } from 'react-icons/cg';
+import { BiDownload } from 'react-icons/bi';
 
 import { ModalCasa } from '../../modal/modalCasa';
 
@@ -16,7 +17,7 @@ import { Modal } from "react-responsive-modal";
 
 import {
     Container, Section, Content, Carousel,
-    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, Head , ImagemModal 
+    Section2, BackgroudImage, Navegador, Header, Body, Acao, Contato, Whatsapp, Imagem, Head, ImagemModal
 } from './styles';
 
 import { Casas } from '../../utils/residencias';
@@ -101,6 +102,25 @@ const Detalhe: React.FC<Props> = ({ match }) => {
 
     };
 
+    function DownloadImagem(link : string) {
+        var element = document.createElement("a");
+        var file = new Blob(
+          [
+            link
+          ],
+          { type: "image/*" }
+        );
+        element.href = URL.createObjectURL(file);
+        element.download = `imagem${Math.random()}.${ext(link)}`;
+        element.click();
+    }
+
+    function ext(path: string) {
+        var final = path.substr(path.lastIndexOf('/')+1);
+        var separador = final.lastIndexOf('.');
+        return separador <= 0 ? '' : final.substr(separador + 1);
+    }
+
     return (
         <Container>
             <BackgroudImage />
@@ -147,6 +167,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                     </Section>
                     <Section2>
                         <Carousel>
+                            
                             {fotos && (
                                 fotos.map((p: PropsFotos) =>
                                     <Imagem img={p.value!} onClick={() => { setFotoSelecionada(p.key); handleShowModal() }} >
@@ -161,12 +182,15 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                                     fotos.length > 0 && (
                                         <ImagemModal
                                             src={fotos[fotoSelecionada].value} />)
-                                        
+
                                 }
                                 <Head>
+                                    <a href={fotos[fotoSelecionada]?.value.toString()} download>
+                                        <BiDownload size={'2.0rem'} /> Baixar Foto
+                                    </a>   
                                     <button onClick={() => { handle('back') }}>
                                         <FiArrowLeft size={'2.0rem'} /> Anterior
-                                </button>
+                                    </button>
                                     <button onClick={() => { handle('next') }}>
                                         Proxima
                                     <FiArrowRight size={'2.0rem'} />
