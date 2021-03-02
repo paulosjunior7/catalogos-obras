@@ -52,8 +52,8 @@ export const Casas = [
     bairro: "Residencial Canadá",
     cidade: "Goiânia",
     valor: "R$ 220.000,00",
-    status: "Concluída",
-    previsaoConclusao: "Concluída",
+    status: "Vendida",
+    previsaoConclusao: "Vendida",
     detalhes: [
       "2 quartos sendo 1 suíte",
       "Suite com closet",
