@@ -39,16 +39,21 @@ export const Status = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  .emConstrucao {
+
+  .Em_Construção {
     background-color: #fff2dc;
   color: #F7B649;
   }
 
-  .concluida {
+  .Concluida {
     background-color: #b4ecb4;
     color:  #3ace3a;
   }
 
+  .Vendida {
+    background-color: #f58787;
+    color: #c40202;
+  }
  
 
   @media (max-width: 474px) {

@@ -85,8 +85,8 @@ const Home = () => {
                      <p>{p.valor}</p> 
                     </div>
 
-                    <Status className={ p.status == 'Concluída' ? 'concluida' : 'emConstrucao'}>
-                      <a className={ p.status == 'Concluída' ? 'concluida' : 'emConstrucao'} >{p.status}</a>
+                    <Status className={ p.status }>
+                      <a className={ p.status } >{p.status.replace("_", " ").toUpperCase()}</a>
                     </Status>
                   </span>
 
