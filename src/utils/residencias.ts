@@ -197,7 +197,7 @@ export const Casas = [
     bairro: "Vereda dos Buritis",
     cidade: "Goiânia",
     valor: "R$ 460.000,00",
-    status: "Em_Construção",
+    status: "Vendida",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "Somente 1 casa no lote",
