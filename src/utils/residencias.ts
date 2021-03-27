@@ -10,6 +10,8 @@ import fachada22 from '../Assets/terrasAlpha/fachada22.jpg';
 import piscina9 from '../Assets/terrasAlpha/piscina9.jpg';
 import piscina10 from '../Assets/terrasAlpha/piscina10.jpg';
 import sala4a from '../Assets/terrasAlpha/sala4a.jpg';
+import banheiroCond from '../Assets/terrasAlpha/banheiroCond.jpeg';
+import banheiroCond2 from '../Assets/terrasAlpha/banheiroCond2.jpeg';
 
 import fachada from '../Assets/terrasAlpha2/fachada.jpg';
 
@@ -53,7 +55,7 @@ export const Casas = [
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
-    status: "Em_Construção",
+    status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
@@ -90,7 +92,7 @@ export const Casas = [
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
-    status: "Em_Construção",
+    status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
@@ -121,6 +123,8 @@ export const Casas = [
       COZINHAA,
       COZINHAF2,
       detalheCozinha,
+      banheiroCond,
+      banheiroCond2,
       piscina9,
       piscina10,
       sala4a
@@ -132,7 +136,7 @@ export const Casas = [
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
-    status: "Em_Construção",
+    status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
@@ -165,7 +169,7 @@ export const Casas = [
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
-    status: "Em_Construção",
+    status: "Em Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
