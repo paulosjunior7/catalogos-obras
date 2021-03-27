@@ -139,7 +139,7 @@ const Detalhe: React.FC<Props> = ({ match }) => {
                         <p> Área Construida: <a>{detalheCasa?.areaConstruida} </a></p>
                         {detalheCasa?.lote != "" && <p> Lote: <a>{detalheCasa?.lote}</a> </p>}
                         <p> Condições: <a>{detalheCasa?.condicoes} </a></p>
-                        <p> Status: <a>{detalheCasa?.status} </a></p>
+                        <p> Status: <a>{detalheCasa?.status.replace("_", " ")} </a></p>
                         <p> Previsão de Conclusão: <a>{detalheCasa?.previsaoConclusao} </a></p>
                         <p> Detalhes: </p>
                         <ul>

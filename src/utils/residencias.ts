@@ -54,7 +54,7 @@ export const Casas = [
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
-    status: "Em Construção",
+    status: "Em_Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
@@ -99,7 +99,7 @@ export const Casas = [
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
-    status: "Em Construção",
+    status: "Em_Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
@@ -137,7 +137,7 @@ export const Casas = [
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
-    status: "Em Construção",
+    status: "Em_Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
@@ -170,7 +170,7 @@ export const Casas = [
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
-    status: "Em Construção",
+    status: "Em_Construção",
     previsaoConclusao: "Abril/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
