@@ -48,46 +48,8 @@ import canada18 from '../Assets/canada/18.jpeg';
 import { ModalCasa } from '../modal/modalCasa';
 
 export const Casas = [
-  
   {
     id: 1,
-    endereco: "Alameda Espanha , quadra D1, lote 04",
-    bairro: "Terras Alpha Residencial 1",
-    cidade: "Senador Canedo",
-    valor: "R$ 850.000,00",
-    status: "Em Construção",
-    previsaoConclusao: "Abril/2021",
-    detalhes: [
-      "3 súites sendo 2 plenas e 1 master",
-      "Suíte master com closet",
-      "Banheiro master com lavatório e chuveiro duplo",
-      "Sala com pé direito duplo",
-      "Cozinha",
-      "Varanda Gourmet ampla com bancada em ilha e churrasqueira",
-      "Lavabo",
-      "Área de serviço",
-      "Despensa",
-      "Pisicina com prainha, iluminação e pontos de hidro",
-      " Ducha",
-      "Garagem coberta para dois carros",
-      "Projeto luminotécnico",
-      "Pontos para instalação de ar condicionado",
-      "Aquecimento solar",
-      "Fachada com detalhe em pedra natural"
-    ],
-    condicoes: "Financiamento bancário ou a vista",
-    areaConstruida: "173 m²",
-    lote: "360 m²",
-    fracaolote: "",
-    quartos: 3,
-    banheiros: 4,
-    imagens: [
-      fachada
-    ]
-  },
-  
-  {
-    id: 2,
     endereco: "Alameda Escócia, quadra A1, lote 22",
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
@@ -130,6 +92,45 @@ export const Casas = [
       sala4a
     ]
   },
+  
+  {
+    id: 2,
+    endereco: "Alameda Espanha , quadra D1, lote 04",
+    bairro: "Terras Alpha Residencial 1",
+    cidade: "Senador Canedo",
+    valor: "R$ 850.000,00",
+    status: "Em Construção",
+    previsaoConclusao: "Abril/2021",
+    detalhes: [
+      "3 súites sendo 2 plenas e 1 master",
+      "Suíte master com closet",
+      "Banheiro master com lavatório e chuveiro duplo",
+      "Sala com pé direito duplo",
+      "Cozinha",
+      "Varanda Gourmet ampla com bancada em ilha e churrasqueira",
+      "Lavabo",
+      "Área de serviço",
+      "Despensa",
+      "Pisicina com prainha, iluminação e pontos de hidro",
+      " Ducha",
+      "Garagem coberta para dois carros",
+      "Projeto luminotécnico",
+      "Pontos para instalação de ar condicionado",
+      "Aquecimento solar",
+      "Fachada com detalhe em pedra natural"
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "173 m²",
+    lote: "360 m²",
+    fracaolote: "",
+    quartos: 3,
+    banheiros: 4,
+    imagens: [
+      fachada
+    ]
+  },
+  
+  
   {
     id: 3,
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
