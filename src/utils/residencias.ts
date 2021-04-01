@@ -12,6 +12,11 @@ import piscina10 from '../Assets/terrasAlpha/piscina10.jpg';
 import sala4a from '../Assets/terrasAlpha/sala4a.jpg';
 import banheiroCond from '../Assets/terrasAlpha/banheiroCond.jpeg';
 import banheiroCond2 from '../Assets/terrasAlpha/banheiroCond2.jpeg';
+import terra1 from '../Assets/terrasAlpha/terra1.jpg';
+import terra2 from '../Assets/terrasAlpha/terra2.jpg';
+import terra3 from '../Assets/terrasAlpha/terra3.jpg';
+import terra4 from '../Assets/terrasAlpha/terra4.jpg';
+import terra5 from '../Assets/terrasAlpha/terra5.jpg';
 
 import fachada from '../Assets/terrasAlpha2/fachada.jpg';
 
@@ -82,14 +87,19 @@ export const Casas = [
     banheiros: 4,
     imagens: [
       fachada22,
+      piscina9,
+      piscina10,
+      sala4a,
       COZINHAA,
       COZINHAF2,
       detalheCozinha,
+      terra2 ,
+      terra3 ,
+      terra5 ,
       banheiroCond,
       banheiroCond2,
-      piscina9,
-      piscina10,
-      sala4a
+      terra1 ,
+      terra4 ,
     ]
   },
   
