@@ -49,6 +49,15 @@ import canada16 from '../Assets/canada/16.jpeg';
 import canada17 from '../Assets/canada/17.jpeg';
 import canada18 from '../Assets/canada/18.jpeg';
 
+import petro1 from '../Assets/Petropolis/1.jpg';
+import petro2 from '../Assets/Petropolis/2.jpg';
+import petro3 from '../Assets/Petropolis/3.jpg';
+import petro4 from '../Assets/Petropolis/4.jpg';
+import petro5 from '../Assets/Petropolis/5.jpg';
+import petro6 from '../Assets/Petropolis/6.png';
+import petro7 from '../Assets/Petropolis/7.jpg';
+
+
 
 import { ModalCasa } from '../modal/modalCasa';
 
@@ -204,6 +213,76 @@ export const Casas = [
       fachadaCasa2,
       fachadas,
       planta0512
+    ]
+  },
+  {
+    id: 7,
+    endereco: "Rua Craos, quadra 16, lote 29, Casa 01",
+    bairro: "Res. Petropolis",
+    cidade: "Goiânia",
+    valor: "R$ 300.000,00",
+    status: "Em_Construção",
+    previsaoConclusao: "Junho/2021",
+    detalhes: [
+      "3 Quartos, sendo 1 suíte",
+      "Suíte com closet e banheiro amplo",
+      "Banheiro Social",
+      "Sala com cozinha americana",
+      "Area de Serviço coberta",
+      "Garagem coberta pra 2 carros",
+      "Varanda Gourmet com churrasqueira",
+      "Lavabo",
+      "Piso Porcelanato",
+      "Acabamento alto padrão",
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "120 m²",
+    fracaolote: "180m²",
+    quartos: 3,
+    banheiros: 3,
+    lote: "",
+    imagens: [
+      petro2,
+      petro7,
+      petro4,
+      petro1,
+      petro6,
+      petro5,
+    ]
+  },
+  {
+    id: 8,
+    endereco: "Rua Craos, quadra 16, lote 29, Casa 02",
+    bairro: "Res. Petropolis",
+    cidade: "Goiânia",
+    valor: "R$ 300.000,00",
+    status: "Em_Construção",
+    previsaoConclusao: "Junho/2021",
+    detalhes: [
+      "3 Quartos, sendo 1 suíte",
+      "Suíte com closet e banheiro amplo",
+      "Banheiro Social",
+      "Sala com cozinha americana",
+      "Area de Serviço coberta",
+      "Garagem coberta pra 2 carros",
+      "Varanda Gourmet com churrasqueira",
+      "Lavabo",
+      "Piso Porcelanato",
+      "Acabamento alto padrão",
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "120 m²",
+    fracaolote: "180m²",
+    lote: "",
+    quartos: 3,
+    banheiros: 3,
+    imagens: [
+      petro3,
+      petro7,
+      petro4,
+      petro1,
+      petro6,
+      petro5,
     ]
   },
   {
