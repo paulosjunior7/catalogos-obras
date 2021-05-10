@@ -30,25 +30,6 @@ import fachadaCasa1 from '../Assets/tresMarias/fachadaCasa1.jpg';
 import fachadaCasa2 from '../Assets/tresMarias/fachadaCasa2.jpg';
 import fachadas from '../Assets/tresMarias/fachadas.png';
 
-import canada1 from '../Assets/canada/1.jpeg';
-import canada2 from '../Assets/canada/2.jpeg';
-import canada3 from '../Assets/canada/3.jpeg';
-import canada4 from '../Assets/canada/4.jpeg';
-import canada5 from '../Assets/canada/5.jpeg';
-import canada6 from '../Assets/canada/6.jpeg';
-import canada7 from '../Assets/canada/7.jpeg';
-import canada8 from '../Assets/canada/8.jpeg';
-import canada9 from '../Assets/canada/9.jpeg';
-import canada10 from '../Assets/canada/10.jpeg';
-import canada11 from '../Assets/canada/11.jpeg';
-import canada12 from '../Assets/canada/12.jpeg';
-import canada13 from '../Assets/canada/13.jpeg';
-import canada14 from '../Assets/canada/14.jpeg';
-import canada15 from '../Assets/canada/15.jpeg';
-import canada16 from '../Assets/canada/16.jpeg';
-import canada17 from '../Assets/canada/17.jpeg';
-import canada18 from '../Assets/canada/18.jpeg';
-
 import petro1 from '../Assets/Petropolis/1.jpg';
 import petro2 from '../Assets/Petropolis/2.jpg';
 import petro3 from '../Assets/Petropolis/3.jpg';
@@ -56,8 +37,6 @@ import petro4 from '../Assets/Petropolis/4.jpg';
 import petro5 from '../Assets/Petropolis/5.jpg';
 import petro6 from '../Assets/Petropolis/6.png';
 import petro7 from '../Assets/Petropolis/7.jpg';
-
-
 
 import { ModalCasa } from '../modal/modalCasa';
 
@@ -69,7 +48,7 @@ export const Casas = [
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
     status: "Em_Construção",
-    previsaoConclusao: "Abril/2021",
+    previsaoConclusao: "Julho/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
       "Suíte master com closet",
@@ -119,7 +98,7 @@ export const Casas = [
     cidade: "Senador Canedo",
     valor: "R$ 850.000,00",
     status: "Em_Construção",
-    previsaoConclusao: "Abril/2021",
+    previsaoConclusao: "Setembro/2021",
     detalhes: [
       "3 súites sendo 2 plenas e 1 master",
       "Suíte master com closet",
@@ -157,7 +136,7 @@ export const Casas = [
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
     status: "Em_Construção",
-    previsaoConclusao: "Abril/2021",
+    previsaoConclusao: "Junho/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
       "Suíte com closet e banheiro amplo",
@@ -190,7 +169,7 @@ export const Casas = [
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
     status: "Em_Construção",
-    previsaoConclusao: "Abril/2021",
+    previsaoConclusao: "Junho/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
       "Suíte com closet e banheiro amplo",
@@ -287,12 +266,12 @@ export const Casas = [
   },
   {
     id: 5,
-    endereco: "Rua Vb-21 Quadra 18, Lote 15",
+    endereco: "Rua Vb-31 Quadra 25, Lote 25",
     bairro: "Vereda dos Buritis",
     cidade: "Goiânia",
-    valor: "R$ 460.000,00",
-    status: "Vendida",
-    previsaoConclusao: "Abril/2021",
+    valor: "R$ 480.000,00",
+    status: "Em_Construção",
+    previsaoConclusao: "Setembro/2021",
     detalhes: [
       "Somente 1 casa no lote",
       "2 suítes plenas",
@@ -322,52 +301,5 @@ export const Casas = [
       planta1815,
     ]
   },
-  {
-    id: 6,
-    endereco: "Rua RC 8, quadra 11, lote 14, casa 02",
-    bairro: "Residencial Canadá",
-    cidade: "Goiânia",
-    valor: "R$ 220.000,00",
-    status: "Vendida",
-    previsaoConclusao: "Vendida",
-    detalhes: [
-      "2 quartos sendo 1 suíte",
-      "Suite com closet",
-      "Banheiro suíte com box de abrir e acabamento em cristal natural",
-      "Sala com iluminação em sanca e detalhe em revestimento 3D",
-      "Cozinha americana",
-      "Area de serviço coberta",
-      "Garagem coberta para dois carros",
-      "Varanda Gourmet com churrasqueira",
-      "Ducha",
-      "Piso porcelanato",
-      "Lavatórios com cuba de sobrepor"
-    ],
-    condicoes: "Financiamento bancário ou a vista",
-    areaConstruida: "90 m²",
-    lote: "",
-    fracaolote: "150m²",
-    quartos: 2,
-    banheiros: 2,
-    imagens: [
-      canada1,
-      canada2,
-      canada3,
-      canada4,
-      canada5,
-      canada6,
-      canada7,
-      canada8,
-      canada9,
-      canada10,
-      canada11,
-      canada12,
-      canada13,
-      canada14,
-      canada15,
-      canada16,
-      canada17,
-      canada18,
-    ]
-  }
+  
 ];
