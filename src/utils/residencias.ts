@@ -18,7 +18,17 @@ import terra3 from '../Assets/terrasAlpha/terra3.jpg';
 import terra4 from '../Assets/terrasAlpha/terra4.jpg';
 import terra5 from '../Assets/terrasAlpha/terra5.jpg';
 
-import fachada from '../Assets/terrasAlpha2/fachada.jpg';
+import terras1 from '../Assets/terrasAlpha2/1.jpg';
+import terras2 from '../Assets/terrasAlpha2/2.jpg';
+import terras3 from '../Assets/terrasAlpha2/3.jpg';
+import terras4 from '../Assets/terrasAlpha2/4.jpg';
+import terras5 from '../Assets/terrasAlpha2/5.jpg';
+import terras6 from '../Assets/terrasAlpha2/6.jpg';
+import terras7 from '../Assets/terrasAlpha2/7.jpg';
+import terras8 from '../Assets/terrasAlpha2/8.jpg';
+import terras9 from '../Assets/terrasAlpha2/9.jpg';
+import terras10 from '../Assets/terrasAlpha2/10.jpg';
+import terras11 from '../Assets/terrasAlpha2/11.jpg';
 
 import fachada10 from '../Assets/veredas/fachada10.jpg';
 import fachada11 from '../Assets/veredas/fachada11.jpg';
@@ -38,7 +48,7 @@ import petro5 from '../Assets/Petropolis/5.jpg';
 import petro6 from '../Assets/Petropolis/6.png';
 import petro7 from '../Assets/Petropolis/7.jpg';
 
-import { ModalCasa } from '../modal/modalCasa';
+
 
 export const Casas = [
   {
@@ -124,11 +134,19 @@ export const Casas = [
     quartos: 3,
     banheiros: 4,
     imagens: [
-      fachada
+      terras1,
+      terras2,
+      terras3,
+      terras4,
+      terras5,
+      terras6,
+      terras7,
+      terras8,
+      terras9,
+      terras10,
+      terras11
     ]
   },
-  
-  
   {
     id: 3,
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
