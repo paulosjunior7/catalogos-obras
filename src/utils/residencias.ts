@@ -217,7 +217,7 @@ export const Casas = [
     endereco: "Rua Vb-31 Quadra 25, Lote 25",
     bairro: "Vereda dos Buritis",
     cidade: "Goiânia",
-    valor: "R$ 480.000,00",
+    valor: "R$ 500.000,00",
     status: "Em_Construção",
     previsaoConclusao: "Setembro/2021",
     detalhes: [
