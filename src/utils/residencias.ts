@@ -56,7 +56,7 @@ export const Casas = [
     endereco: "Alameda Escócia, quadra A1, lote 22",
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
-    valor: "R$ 850.000,00",
+    valor: "R$ 800.000,00",
     status: "Em_Construção",
     previsaoConclusao: "Julho/2021",
     detalhes: [
@@ -106,7 +106,7 @@ export const Casas = [
     endereco: "Alameda Espanha , quadra D1, lote 04",
     bairro: "Terras Alpha Residencial 1",
     cidade: "Senador Canedo",
-    valor: "R$ 850.000,00",
+    valor: "R$ 800.000,00",
     status: "Em_Construção",
     previsaoConclusao: "Agosto/2021",
     detalhes: [
@@ -152,7 +152,7 @@ export const Casas = [
     endereco: "Rua Maria Gonçalves de Araujo, quadra 05, lote 12, Casa 1",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 340.000,00",
+    valor: "R$ 320.000,00",
     status: "Em_Construção",
     previsaoConclusao: "Junho/2021",
     detalhes: [
@@ -186,7 +186,7 @@ export const Casas = [
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 340.000,00",
-    status: "Em_Construção",
+    status: "Vendida",
     previsaoConclusao: "Junho/2021",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
