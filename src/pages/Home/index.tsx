@@ -30,7 +30,6 @@ const Home = () => {
     return casas.status.toLowerCase().includes(pesquisaStatus.toLowerCase()) && casas.bairro.toLowerCase().includes(pesquisaBairro.toLowerCase())
   });
 
-  console.log(pesquisaStatus);
   return (
     <Container>
       <header>
