@@ -50,7 +50,7 @@ import OBRA3621_8 from '../Assets/OBRA3621/OBRA3621_8.jpeg';
 export const Casas = [
   {
     id: 3,
-    endereco: "Avenida Parque, quadra 32, lote 05, Casa 1",
+    endereco: "Avenida Parque, quadra 32, lote 05, Casa 1 e Casa 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 375.000,00",
@@ -97,7 +97,7 @@ export const Casas = [
   },
   {
     id: 1,
-    endereco: "Avenida Presidente Dutra, quadra 06, lote 11, Casa 1",
+    endereco: "Avenida Presidente Dutra, quadra 06, lote 11, Casa 1 e Casa 2",
     bairro: "Jardim Presidente Extensão I",
     cidade: "Goiânia",
     valor: "R$ 480.000,00",
@@ -112,6 +112,7 @@ export const Casas = [
       "Varanda Gourmet com churrasqueira",
       "Piscina com pontos de hidro, led e cascata",
       "Piso Porcelanato",
+      "Esquadrias em aluminio",
       "Acabamento alto padrão"
     ],
     condicoes: "Financiamento bancário ou a vista",
@@ -134,7 +135,7 @@ export const Casas = [
   },
   {
     id: 2,
-    endereco: "Rua dos Moros, quadra 18, lote 02, Casa 1",
+    endereco: "Rua dos Moros, quadra 18, lote 02, Casa 1 e Casa 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 480.000,00",
@@ -149,6 +150,7 @@ export const Casas = [
       "Varanda Gourmet com churrasqueira",
       "Piscina com pontos de hidro, led e cascata",
       "Piso Porcelanato",
+      "Esquadrias em aluminio",
       "Acabamento alto padrão"
     ],
     condicoes: "Financiamento bancário ou a vista",
@@ -169,7 +171,7 @@ export const Casas = [
   },
   {
     id: 4,
-    endereco: "Rua MDV 27 , quadra 36, lote 21, Casa 1",
+    endereco: "Rua MDV 27 , quadra 36, lote 21, Casa 1 e Casa 2",
     bairro: "Moinho dos Ventos",
     cidade: "Goiânia",
     valor: "R$ 550.000,00",
@@ -186,6 +188,7 @@ export const Casas = [
       "Piscina com pontos de hidro, led e cascata",
       "Lavabo",
       "Piso Porcelanato",
+      "Esquadrias em aluminio",
       "Acabamento alto padrão"
     ],
     condicoes: "Financiamento bancário ou a vista",
