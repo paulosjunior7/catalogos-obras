@@ -295,7 +295,7 @@ CARDS
   background-color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  border-radius: 6px;
+  border-radius: 0px;
   box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   width: 100%;
   justify-content: space-between;
@@ -383,7 +383,7 @@ MODAL
   margin: 0 auto;
   padding: 10px;
   
-  border-radius: 3px;
+  border-radius: 0px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   
   opacity: 0;
