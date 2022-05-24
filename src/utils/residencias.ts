@@ -100,7 +100,7 @@ export const Casas = [
     endereco: "Avenida Presidente Dutra, quadra 06, lote 11, Casa 1 e Casa 2",
     bairro: "Jardim Presidente Extensão I",
     cidade: "Goiânia",
-    valor: "R$ 480.000,00",
+    valor: "R$ 500.000,00",
     status: "Em_Construção",
     previsaoConclusao: "Junho/2022",
     detalhes: [
