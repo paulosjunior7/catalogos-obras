@@ -46,6 +46,8 @@ import OBRA3621_6 from '../Assets/OBRA3621/OBRA3621_6.jpeg';
 import OBRA3621_7 from '../Assets/OBRA3621/OBRA3621_7.jpeg';
 import OBRA3621_8 from '../Assets/OBRA3621/OBRA3621_8.jpeg';
 
+import OBRAB15_1 from '../Assets/OBRA3621/OBRAB15_1.jpeg';
+import OBRAB15_2 from '../Assets/OBRA3621/OBRAB15_2.jpeg';
 
 export const Casas = [
   {
@@ -208,4 +210,39 @@ export const Casas = [
       OBRA3621_8
     ]
   },
+  {
+    id: 5,
+    endereco: "Avenida Presidente Epitacio Pessoa, quadra B, lote 15",
+    bairro: "Jardim Presidente Extensão III",
+    cidade: "Goiânia",
+    valor: "R$ 1.000.000,00",
+    status: "Em_Construção",
+    previsaoConclusao: "Agosto/2022",
+    detalhes: [
+      "3 suítes,
+	  "sendo 1 suíte master com Banheira de hidromassagem e closet ",
+      "Banheiro Social",
+      "Sala de Estar",
+	  "Sala de Jantar",
+      "Cozinha integrada",
+      "Area de Serviço coberta",
+      "Garagem coberta ",
+      "Varanda Gourmet com churrasqueira",
+	  "Lavabo",
+      "Piscina com pontos de hidro, led e cascata",
+	  "Sauna",
+      "Espaço para roupeiro",
+      "Piso Porcelanato",
+      "Acabamento alto padrão"
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "180 m²",
+    lote: "360 m²",
+    quartos: 3, 
+    banheiros: 4,
+    imagens: [
+      OBRAB15_1,
+      OBRAB15_2
+    ]
+  }
 ];
