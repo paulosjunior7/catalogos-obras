@@ -46,9 +46,9 @@ import OBRA3621_6 from '../Assets/OBRA3621/OBRA3621_6.jpeg';
 import OBRA3621_7 from '../Assets/OBRA3621/OBRA3621_7.jpeg';
 import OBRA3621_8 from '../Assets/OBRA3621/OBRA3621_8.jpeg';
 
-import OBRAB15_1 from '../Assets/OBRAB15_1.jpeg';
-import OBRAB15_2 from '../Assets/OBRAB15_2.jpeg';
-import OBRAB15_3 from '../Assets/OBRAB15_3.jpeg';
+import OBRAB15_1 from '../Assets/OBRAB15/OBRAB15_1.jpeg';
+import OBRAB15_2 from '../Assets/OBRAB15/OBRAB15_2.jpeg';
+import OBRAB15_3 from '../Assets/OBRAB15/OBRAB15_3.jpeg';
 
 export const Casas = [
   {
@@ -73,18 +73,18 @@ export const Casas = [
     areaConstruida: "117 m²",
     lote: "",
     fracaolote: "180 m²",
-    quartos: 3, 
+    quartos: 3,
     banheiros: 2,
     imagens: [
-      OBRA3205_1 ,
-      OBRA3205_2 ,
-      OBRA3205_3 ,
-      OBRA3205_4 ,
-      OBRA3205_5 ,
-      OBRA3205_6 ,
-      OBRA3205_7 ,
-      OBRA3205_8 ,
-      OBRA3205_9 ,
+      OBRA3205_1,
+      OBRA3205_2,
+      OBRA3205_3,
+      OBRA3205_4,
+      OBRA3205_5,
+      OBRA3205_6,
+      OBRA3205_7,
+      OBRA3205_8,
+      OBRA3205_9,
       OBRA3205_10,
       OBRA3205_11,
       OBRA3205_12,
@@ -122,7 +122,7 @@ export const Casas = [
     areaConstruida: "110 m²",
     lote: "",
     fracaolote: "180 m²",
-    quartos: 3, 
+    quartos: 3,
     banheiros: 2,
     imagens: [
       OBRA0611_1,
@@ -160,7 +160,7 @@ export const Casas = [
     areaConstruida: "110 m²",
     lote: "",
     fracaolote: "180 m²",
-    quartos: 3, 
+    quartos: 3,
     banheiros: 2,
     imagens: [
       OBRA1802_1,
@@ -198,7 +198,7 @@ export const Casas = [
     areaConstruida: "111 m²",
     lote: "",
     fracaolote: "180 m²",
-    quartos: 3, 
+    quartos: 3,
     banheiros: 3,
     imagens: [
       OBRA3621_1,
@@ -220,18 +220,18 @@ export const Casas = [
     status: "Em_Construção",
     previsaoConclusao: "Agosto/2022",
     detalhes: [
-      "3 suítes,
-	  "sendo 1 suíte master com Banheira de hidromassagem e closet ",
+      "3 suítes",
+      "sendo 1 suíte master com Banheira de hidromassagem e closet",
       "Banheiro Social",
       "Sala de Estar",
-	  "Sala de Jantar",
+      "Sala de Jantar",
       "Cozinha integrada",
       "Area de Serviço coberta",
       "Garagem coberta ",
       "Varanda Gourmet com churrasqueira",
-	  "Lavabo",
+      "Lavabo",
       "Piscina com pontos de hidro, led e cascata",
-	  "Sauna",
+      "Sauna",
       "Espaço para roupeiro",
       "Piso Porcelanato",
       "Acabamento alto padrão"
@@ -239,11 +239,12 @@ export const Casas = [
     condicoes: "Financiamento bancário ou a vista",
     areaConstruida: "180 m²",
     lote: "360 m²",
-    quartos: 3, 
+    quartos: 3,
     banheiros: 4,
     imagens: [
       OBRAB15_1,
-      OBRAB15_2
+      OBRAB15_2,
+      OBRAB15_3
     ]
   }
 ];
