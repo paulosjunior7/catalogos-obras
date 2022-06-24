@@ -46,8 +46,9 @@ import OBRA3621_6 from '../Assets/OBRA3621/OBRA3621_6.jpeg';
 import OBRA3621_7 from '../Assets/OBRA3621/OBRA3621_7.jpeg';
 import OBRA3621_8 from '../Assets/OBRA3621/OBRA3621_8.jpeg';
 
-import OBRAB15_1 from '../Assets/OBRA3621/OBRAB15_1.jpeg';
-import OBRAB15_2 from '../Assets/OBRA3621/OBRAB15_2.jpeg';
+import OBRAB15_1 from '../Assets/OBRAB15_1.jpeg';
+import OBRAB15_2 from '../Assets/OBRAB15_2.jpeg';
+import OBRAB15_3 from '../Assets/OBRAB15_3.jpeg';
 
 export const Casas = [
   {
