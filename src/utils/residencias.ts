@@ -239,6 +239,7 @@ export const Casas = [
     condicoes: "Financiamento bancário ou a vista",
     areaConstruida: "180 m²",
     lote: "360 m²",
+    fracaolote: "",
     quartos: 3,
     banheiros: 4,
     imagens: [
