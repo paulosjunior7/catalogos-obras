@@ -53,7 +53,7 @@ import OBRAB15_3 from '../Assets/OBRAB15/OBRAB15_3.jpeg';
 export const Casas = [
   {
     id: 3,
-    endereco: "Avenida Parque, quadra 32, lote 05, Casa 1 e Casa 2",
+    endereco: "Avenida Parque, quadra 32, lote 05, CASA 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
     valor: "R$ 375.000,00",
