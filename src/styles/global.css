@@ -1,0 +1,8 @@
+@tailwind base;
+@taidwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50  text-zinc-100 overflow-y-auto font-sans
+}
+  

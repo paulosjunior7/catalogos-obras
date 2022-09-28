@@ -105,7 +105,7 @@ export const Casas = [
     endereco: "Avenida Parque, quadra 32, lote 05, CASA 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 375.000,00",
+    valor: "R$ 350.000,00",
     status: "Concluida",
     previsaoConclusao: "Março/2022",
     detalhes: [
@@ -219,8 +219,8 @@ export const Casas = [
     endereco: "Rua dos Moros, quadra 18, lote 02, Casa 1 e Casa 2",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 480.000,00",
-    status: "Em_Construção",
+    valor: "R$ 450.000,00",
+    status: "Concluida",
     previsaoConclusao: "Agosto/2022",
     detalhes: [
       "3 Quartos, sendo 1 suíte",
@@ -256,7 +256,7 @@ export const Casas = [
     endereco: "Rua MDV 27 , quadra 36, lote 21, Casa 1 e Casa 2",
     bairro: "Moinho dos Ventos",
     cidade: "Goiânia",
-    valor: "R$ 500.000,00",
+    valor: "R$ 450.000,00",
     status: "Concluida",
     previsaoConclusao: "Julho/2022",
     detalhes: [
