@@ -57,13 +57,67 @@ import OBRAB15_11 from '../Assets/OBRAB15/OBRAB15_11.jpg';
 import OBRAB15_12 from '../Assets/OBRAB15/OBRAB15_12.jpg';
 import OBRAB15_13 from '../Assets/OBRAB15/OBRAB15_13.jpg';
 
+import OBRA12919_2 from '../Assets/OBRA12919/OBRA12919_2.jpg';
+import OBRA12919_1 from '../Assets/OBRA12919/OBRA12919_1.jpg';
+import OBRA12919_3 from '../Assets/OBRA12919/OBRA12919_3.jpg';
+import OBRA12919_4 from '../Assets/OBRA12919/OBRA12919_4.jpg';
+import OBRA12919_5 from '../Assets/OBRA12919/OBRA12919_5.jpg';
+import OBRA12919_6 from '../Assets/OBRA12919/OBRA12919_6.jpg';
+import OBRA12919_7 from '../Assets/OBRA12919/OBRA12919_7.jpg';
+import OBRA12919_8 from '../Assets/OBRA12919/OBRA12919_8.jpg';
+import OBRA12919_9 from '../Assets/OBRA12919/OBRA12919_9.jpg';
+import OBRA12919_10 from '../Assets/OBRA12919/OBRA12919_10.jpg';
+
+
 export const Casas = [
+  {
+    id: 0,
+    endereco: "Rua Itaira, quadra 129, lote 19",
+    bairro: "Jardim Atlantico",
+    cidade: "Goiânia",
+    valor: "R$ 1.200.000,00",
+    status: "Em_Construção",
+    previsaoConclusao: "Abril/2023",
+    detalhes: [
+      "3 suítes",
+      "sendo 1 suíte master com Banheira de hidromassagem e closet",
+      "Banheiro Social",
+      "Sala de Estar",
+      "Sala de Jantar",
+      "Cozinha integrada",
+      "Area de Serviço coberta",
+      "Garagem coberta para 2 carros",
+      "Varanda Gourmet com churrasqueira",
+      "Lavabo",
+      "Piscina com pontos de hidro, led, cascata e aquecimento",
+      "Piso Porcelanato",
+      "Acabamento alto padrão"
+    ],
+    condicoes: "Financiamento bancário ou a vista",
+    areaConstruida: "200 m²",
+    lote: "420 m²",
+    fracaolote: "",
+    quartos: 3,
+    banheiros: 4,
+    imagens: [
+      OBRA12919_1,
+      OBRA12919_2,
+      OBRA12919_3,
+      OBRA12919_4,
+      OBRA12919_5,
+      OBRA12919_6,
+      OBRA12919_7,
+      OBRA12919_8,
+      OBRA12919_9,
+      OBRA12919_10,
+    ]
+  },  
   {
     id: 1,
     endereco: "Avenida Presidente Dutra, quadra 06, lote 11, Casa 1 e Casa 2",
     bairro: "Jardim Presidente Extensão I",
     cidade: "Goiânia",
-    valor: "R$ 480.000,00",
+    valor: "R$ 456.000,00",
     status: "Concluida",
     previsaoConclusao: "Agosto/2022",
     detalhes: [
@@ -127,10 +181,10 @@ export const Casas = [
   },
   {
     id: 2,
-    endereco: "Rua dos Moros, quadra 18, lote 02, Casa 1 e Casa 2",
+    endereco: "Rua dos Moros, quadra 18, lote 02, Casa 1",
     bairro: "Três Marias",
     cidade: "Goiânia",
-    valor: "R$ 450.000,00",
+    valor: "R$ 460.000,00",
     status: "Concluida",
     previsaoConclusao: "Agosto/2022",
     detalhes: [
@@ -169,7 +223,7 @@ export const Casas = [
     cidade: "Goiânia",
     valor: "R$ 1.000.000,00",
     status: "Em_Construção",
-    previsaoConclusao: "Novembro/2022",
+    previsaoConclusao: "Dezembro/2022",
     detalhes: [
       "3 suítes",
       "sendo 1 suíte master com Banheira de hidromassagem e closet",
